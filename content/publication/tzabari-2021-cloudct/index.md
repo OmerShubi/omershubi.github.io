@@ -7,7 +7,7 @@ publication_types:
 authors:
   - Masada Tzabari
   - Vadim Holodovsky
-  - Omer Shubi
+  - admin
   - Eshkol Eytan
   - Orit Altaratz
   - Ilan Koren

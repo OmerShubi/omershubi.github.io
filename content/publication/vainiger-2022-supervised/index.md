@@ -6,7 +6,7 @@ subtitle: ''
 summary: ''
 authors:
 - Adi Vainiger
-- Omer Shubi
+- admin
 - Yoav Y Schechner
 - Yin Zhenping
 - Holger Baars

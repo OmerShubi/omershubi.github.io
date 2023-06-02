@@ -7,7 +7,7 @@ summary: ''
 authors:
 - Masada Tzabari
 - Vadim Holodovsky
-- Omer Shubi
+- admin
 - Eshkol Eitan
 - Orit Altaratz
 - Ilan Koren

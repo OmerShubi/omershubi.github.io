@@ -8,7 +8,7 @@ summary: ''
 authors:
 - Masada Tzabari
 - Vadim Holodovsky
-- Omer Shubi
+- admin
 - Eshkol Eytan
 - Ilan Koren
 - Yoav Y Schechner

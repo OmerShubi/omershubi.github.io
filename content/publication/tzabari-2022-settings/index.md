@@ -16,8 +16,8 @@ tags: [CloudCT]
 categories: [CloudCT]
 date: '2022-01-01'
 lastmod: 2023-06-02T20:08:13+03:00
-featured: false
-draft: true
+featured: true
+draft: false
 url_pdf: "tzabari-2022-settings.pdf"
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

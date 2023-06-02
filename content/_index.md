@@ -3,6 +3,7 @@
 title: ""
 date: 2022-10-24
 type: landing
+editable: true
 
 sections:
   - block: about.biography
@@ -138,6 +139,7 @@ sections:
       view: card
   - block: collection
     content:
+    count: 10
       title: Recent Publications
       text: |-
         {{% callout note %}}

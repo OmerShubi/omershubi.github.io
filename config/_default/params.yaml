@@ -69,7 +69,6 @@ features:
   privacy_pack:
     enable: false
   repository:
-    editable: true
     url: 'https://github.com/OmerShubi/omershubi.github.io'
     content_dir: content
     branch: main

@@ -15,14 +15,13 @@ sections:
     content:
       title: Skills
       items:
-        - name: R
-          description: 90%
-          icon: r-project
-          icon_pack: fab
-        - name: Statistics
-          description: 100%
-          icon: chart-line
-          icon_pack: fas
+        - name: Programming
+          description: **Python**, R, bash, git, LaTeX
+          icon: code
+          icon_pack: fa
+        - name: Brain Modelling
+          description: MNE
+          icon: brain
         - name: Photography
           description: 10%
           icon: camera-retro

@@ -37,8 +37,8 @@ sections:
           company_url: ''
           company_logo: ''
           location: ''
-          date_start: 'Sep 2019'
-          date_end: 'Sep  2021'
+          date_start: '2019-09-01'
+          date_end: '2021-09-30'
           description: |2-
             * Active part in [CloudCT](cloudct.space), a 3D optical scattering tomography space mission to probe clouds.
                         
@@ -48,8 +48,8 @@ sections:
           company_url: ''
           company_logo: ''
           location: ''
-          date_start: 'Mar 2015'
-          date_end: 'Nov 2018'
+          date_start: '2015-03-01'
+          date_end: '2018-11-30'
           description: |2-
             * Head of Business Development, China.
             

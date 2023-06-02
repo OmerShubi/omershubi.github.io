@@ -41,14 +41,14 @@ header:
 
 # Site footer
 
-# footer:
-#   copyright:
-#     notice: '© {year} Me. This work is licensed under {license}'
-#     license:
-#       enable: true
-#       allow_derivatives: false
-#       share_alike: true
-#       allow_commercial: false
+footer:
+  copyright:
+    notice: 'Brain and Eye icons created by [SBTS2018 - Flaticon](https://www.flaticon.com/free-icons/deep-learning)'
+    license:
+      enable: false
+      allow_derivatives: false
+      share_alike: true
+      allow_commercial: false
 
 # Localization
 

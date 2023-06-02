@@ -4,7 +4,7 @@ abstract: >-
 slides: ""
 url_pdf: ""
 publication_types:
-  - "shubi_eye_2023"
+  - "1"
 authors:
   - admin
   - Yevgeni Berzak

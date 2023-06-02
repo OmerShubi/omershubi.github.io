@@ -6,7 +6,7 @@ bio: My research explores how eye movements in reading are related to different
 interests:
   - Artificial Intelligence
   - Computational Linguistics
-  - CognitiveScience
+  - Cognitive Science
 social:
   - icon: envelope
     icon_pack: fas
@@ -30,16 +30,16 @@ education:
   courses:
     - course: Direct-track To PhD in Data Science
       institution: Technion - Israel Institute of Technology
-      year: 2021
+      year: "2021-"
     - course: BSc in Data Science & Engineering
       institution: Technion - Israel Institute of Technology
-      year: ""
+      year: "2017-2021"
 superuser: true
 status:
   icon: ☕️
 last_name: Wu
 highlight_name: true
-first_name: Alice
+first_name: Omer
 email: ""
 ---
 I am a PhD student in Data Science at the Technion. My research explores how eye movements in reading are related to different reading tasks and to reading comprehension.

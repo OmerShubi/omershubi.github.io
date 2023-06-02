@@ -16,7 +16,7 @@ sections:
       title: Skills
       items:
         - name: Programming
-          description: **Python**, R, bash, git, LaTeX
+          description: "**Python**, R, bash, git, LaTeX"
           icon: code
           icon_pack: fa
         - name: "Brain Modelling"

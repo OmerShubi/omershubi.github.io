@@ -20,6 +20,10 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/iamshubi
+  - icon: orcid
+    link: https://orcid.org/0000-0002-2961-5012
+    icon_pack: ai
+    label: orcid
   # - icon: cv
   #   icon_pack: ai
   #   link: uploads/resume.pdf

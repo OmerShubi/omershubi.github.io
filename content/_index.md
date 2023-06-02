@@ -22,10 +22,11 @@ sections:
         - name: "Brain Modelling"
           description: MNE
           icon: brain
-        - name: Photography
-          description: 10%
-          icon: camera-retro
-          icon_pack: fas
+          icon_pack: custom
+        - name: Eye Movements Modelling
+          description: Integration with Large Language Models
+          icon: eye
+          icon_pack: custom
   - block: experience
     id: experience
     content:

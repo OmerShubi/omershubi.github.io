@@ -19,7 +19,7 @@ tags:
 categories: [CloudCT]
 date: '2021-01-01'
 lastmod: 2023-06-02T20:08:13+03:00
-featured: false
+featured: true
 draft: false
 
 # Featured image
@@ -49,6 +49,6 @@ We investigated specifically possibilities of visible light (VIS, 463nm, 545nm, 
 While CloudCT is mainly designed for simultaneous imaging of each cloud field, it is possible to tolerate a lag of several seconds, as small warm clouds hardly evolve in this time scale (at the 20 meter spatial scale). We exploit this, to add more view-points, using the same number of platforms (10). The added viewpoints correspond to single-scattering angles, where polarization yields enhanced sensitivity to the droplet microphysics. These angles require sampling of <1° in the fogbow region. This dictates requirements for the platform attitude control.  
 
 On the algorithmic front, we advanced the retrieval to yield results that (compared to the simulated ground truth) have smaller errors than the prior art. Elements of our advancement include initialization by a parametric horizontally-uniform microphysical model. The parameters of this initialization are determined by a fast optimization process.  The optimized initialization is particularly strong, when relying on the detected degree of linear polarization, instead of radiance.'
-DOI: 'https://doi.org/10.5194/egusphere-egu21-9585'
+DOI: '10.5194/egusphere-egu21-9585'
 publication: '*EGU General Assembly Conference Abstracts*'
 ---

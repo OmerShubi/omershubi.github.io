@@ -16,16 +16,16 @@ authors:
   - Yoav Y Schechner
 author_notes:
 #  - Technion - Israel Institute of Technology
-doi: https://doi.org/10.1117/12.2594134
+doi: '10.1117/12.2594134'
 publication: "*Polarization Science and Remote Sensing X*"
 publication_short: ""
 url_pdf: "tzabari-2021-cloudct.pdf"
 abstract: "The CloudCT project is a mission that aims to demonstrate 3D volumetric scattering tomography of clouds. A formation of ten nanosatellites will simultaneously image cloud fields from multiple directions, at ≈20m nadir ground resolution. Based on this data, scattering tomography will seek the 3D volumetric distribution of cloud properties. We quantitatively compare visible polarized imagers to other imagers considered for the mission. We investigated specifically visible light and short-wave infra-red imagers. Each possibility was considered using Large Eddy Simulation clouds. Major consideration criteria are tomographic quality in the face of sensor and photon noise, calibration errors and stray light. We check the sensitivity to unknown stray light and uncertainty in gain calibration."
 draft: false
-featured: false
+featured: true
 tags:
   - CloudCT
-categories: []
+categories: [CloudCT]
 projects:
   - CloudCT
 summary: ""

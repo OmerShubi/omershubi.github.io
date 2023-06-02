@@ -28,6 +28,7 @@ sections:
           icon: camera-retro
           icon_pack: fas
   - block: experience
+    id: experience
     content:
       title: Experience
       date_format: Jan 2006

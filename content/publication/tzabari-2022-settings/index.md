@@ -16,7 +16,7 @@ tags: [CloudCT]
 categories: [CloudCT]
 date: '2022-01-01'
 lastmod: 2023-06-02T20:08:13+03:00
-featured: true
+featured: false
 draft: false
 url_pdf: "tzabari-2022-settings.pdf"
 # Featured image

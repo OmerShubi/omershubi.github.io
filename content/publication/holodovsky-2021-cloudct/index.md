@@ -19,7 +19,7 @@ tags:
 categories: [CloudCT]
 date: '2021-01-01'
 lastmod: 2023-06-02T20:08:13+03:00
-featured: true
+featured: false
 draft: false
 
 # Featured image

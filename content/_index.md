@@ -149,7 +149,7 @@ sections:
         exclude_featured: false
     design:
       columns: '2'
-      view: citation
+      view: compact
   # - block: collection
   #   id: talks
   #   content:

@@ -12,8 +12,8 @@ url_pdf: ""
 publication_types:
   - "1"
 authors:
-  - Shubi
-  - Berzak
+  - admin
+  - Yevgeni Berzak
 author_notes: []
 publication: In *CogSci 2023*
 summary: In this work, we use question answering as a general framework for
@@ -35,7 +35,7 @@ image:
   preview_only: false
 date: 2023-06-02T08:09:13.881Z
 url_slides: ""
-publishDate: 2017-01-01T00:00:00Z
+publishDate: 2017-01-01T00:00:00.000Z
 url_poster: ""
 url_code: https://github.com/wowchemy/wowchemy-hugo-themes
 ---

@@ -1,6 +1,6 @@
 ---
 title: Omer Shubi
-role: Data Science PhD Student
+role: PhD Student Data Science 
 bio: My research explores how eye movements in reading are related to different
   reading tasks and to reading comprehension.
 interests:
@@ -30,7 +30,7 @@ education:
   courses:
     - course: PhD Student in Data Science
       institution: Technion - Israel Institute of Technology
-      year: "2023 -"
+      year: "2023 - Present"
     - course: Master as part of a direct-track to PhD in Data Science
       institution: Technion - Israel Institute of Technology
       year: "2021 - 2023"
@@ -40,7 +40,7 @@ education:
 superuser: true
 status:
   icon: ☕️
-last_name: Wu
+last_name: Shubi
 highlight_name: true
 first_name: Omer
 email: ""

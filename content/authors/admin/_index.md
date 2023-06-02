@@ -20,20 +20,23 @@ social:
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/iamshubi
-  - icon: cv
-    icon_pack: ai
-    link: uploads/resume.pdf
+  # - icon: cv
+  #   icon_pack: ai
+  #   link: uploads/resume.pdf
 organizations:
   - name: Technion - Israel Insitute of Technology
     url: https://www.technion.ac.il/en/home-2/
 education:
   courses:
-    - course: Direct-track To PhD in Data Science
+    - course: PhD Student in Data Science
       institution: Technion - Israel Institute of Technology
-      year: "2021-"
+      year: "2023 -"
+    - course: Master as part of a direct-track to PhD in Data Science
+      institution: Technion - Israel Institute of Technology
+      year: "2021 - 2023"
     - course: BSc in Data Science & Engineering
       institution: Technion - Israel Institute of Technology
-      year: "2017-2021"
+      year: "2017 - 2021"
 superuser: true
 status:
   icon: ☕️

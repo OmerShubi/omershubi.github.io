@@ -139,7 +139,7 @@ sections:
       view: card
   - block: collection
     content:
-    count: 10
+      count: 10
       title: Recent Publications
       text: |-
         {{% callout note %}}

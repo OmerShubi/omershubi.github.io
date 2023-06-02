@@ -19,7 +19,7 @@ social:
     link: https://github.com/scaperex
   - icon: linkedin
     icon_pack: fab
-    link: https://www.linkedin.com/iamshubi
+    link: https://www.linkedin.com/in/iamshubi
   - icon: cv
     icon_pack: ai
     link: uploads/resume.pdf

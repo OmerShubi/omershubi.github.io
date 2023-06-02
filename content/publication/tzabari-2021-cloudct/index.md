@@ -16,19 +16,23 @@ authors:
   - Yoav Y Schechner
 author_notes:
   - Technion - Israel Institute of Technology
+doi: https://doi.org/10.1117/12.2594134
 publication: "*Polarization Science and Remote Sensing X*"
+publication_short: ""
 abstract: ""
 draft: false
 featured: false
-tags: []
+tags:
+  - CloudCT
 categories: []
-projects: []
+projects:
+  - CloudCT
+summary: ""
+lastmod: 2023-06-02T20:08:13+03:00
 image:
   caption: ""
   focal_point: ""
   preview_only: false
-summary: ""
-lastmod: 2023-06-02T20:08:13+03:00
 date: 2021-01-01
 publishDate: 2023-06-02T17:08:13.460963Z
 ---

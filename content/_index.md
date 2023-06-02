@@ -37,27 +37,25 @@ sections:
           company_url: ''
           company_logo: ''
           location: ''
-          date_start: 'Sept 2019'
-          date_end: 'Sept 2021'
+          date_start: 'September 2019'
+          date_end: 'September 2021'
           description: |2-
             * Active part in [CloudCT](cloudct.space), a 3D optical scattering tomography space mission to probe clouds.
                         
             * Collaborated on developing an atmospheric lidar simulator & deep-learning-based calibration method.
-            
         - title: Multiple Roles
           company: Watteam (Start-Up Company)
           company_url: ''
           company_logo: ''
           location: ''
           date_start: 'March 2015'
-          date_end: 'Nov 2018'
+          date_end: 'November 2018'
           description: |2-
             * Head of Business Development, China.
             
             * Customer Satisfaction Manager.
             
             * Project & Lab Manager.
-
     design:
       columns: '2'
   # - block: accomplishments

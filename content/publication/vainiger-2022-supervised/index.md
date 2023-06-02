@@ -34,8 +34,8 @@ image:
 #   Otherwise, set `projects = []`.
 projects: ["Atmospheric LiDAR"]
 publishDate: '2023-06-02T17:08:13.803314Z'
-publication_types:
 doi: '10.1109/IGARSS46834.2022.9883078'
+publication_types:
 - '1'
 abstract: 'Calibration of an atmospheric lidar is often required due to variations in the electro-optical system. Rayleigh fitting commonly performed may fail under various conditions. Temporal and spatial variations both affect lidar signals. We hence opt for spatiotemporal analysis. We present a novel deep-learning (DL) lidar calibration model based on convolutional neural networks (CNN). We demonstrate our method on simulated data that mimics natural ground-based pulsed time-of-flight lidar signals. Such an approach can better address measurements with a poor signal-to-noise ratio (SNR) and provide a more frequent calibration.'
 publication: '*IGARSS 2022-2022 IEEE International Geoscience and Remote Sensing Symposium*'

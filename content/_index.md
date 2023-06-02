@@ -19,7 +19,7 @@ sections:
           description: **Python**, R, bash, git, LaTeX
           icon: code
           icon_pack: fa
-        - name: Brain Modelling
+        - name: "Brain Modelling"
           description: MNE
           icon: brain
         - name: Photography

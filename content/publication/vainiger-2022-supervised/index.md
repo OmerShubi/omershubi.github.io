@@ -6,14 +6,14 @@ subtitle: ''
 summary: ''
 authors:
 - Adi Vainiger
-- Omer Shubi
+- admin
 - Yoav Y Schechner
 - Yin Zhenping
 - Holger Baars
 - Birgit Heese
 - Dietrich Althausen
-tags: []
-categories: []
+tags: ["Atmospheric LiDAR"]
+categories: ["Atmospheric LiDAR"]
 date: '2022-01-01'
 lastmod: 2023-06-02T20:08:13+03:00
 featured: false
@@ -32,10 +32,11 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
-projects: []
+projects: ["Atmospheric LiDAR"]
 publishDate: '2023-06-02T17:08:13.803314Z'
+doi: '10.1109/IGARSS46834.2022.9883078'
 publication_types:
 - '1'
-abstract: ''
+abstract: 'Calibration of an atmospheric lidar is often required due to variations in the electro-optical system. Rayleigh fitting commonly performed may fail under various conditions. Temporal and spatial variations both affect lidar signals. We hence opt for spatiotemporal analysis. We present a novel deep-learning (DL) lidar calibration model based on convolutional neural networks (CNN). We demonstrate our method on simulated data that mimics natural ground-based pulsed time-of-flight lidar signals. Such an approach can better address measurements with a poor signal-to-noise ratio (SNR) and provide a more frequent calibration.'
 publication: '*IGARSS 2022-2022 IEEE International Geoscience and Remote Sensing Symposium*'
 ---

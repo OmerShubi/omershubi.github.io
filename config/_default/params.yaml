@@ -42,8 +42,9 @@ header:
 # Site footer
 
 footer:
+  widget: mega
   copyright:
-    notice: 'Brain and Eye icons created by [SBTS2018 - Flaticon](https://www.flaticon.com/free-icons/deep-learning)'
+    notice: 'Edit on [GitHub](https://github.com/OmerShubi/omershubi.github.io). Brain & Eye icons by [Flaticon](https://www.flaticon.com/free-icons/deep-learning)'
     license:
       enable: false
       allow_derivatives: false
@@ -68,7 +69,7 @@ features:
   privacy_pack:
     enable: false
   repository:
-    url: 'https://github.com/<username>/<repository>'
+    url: 'https://github.com/OmerShubi/omershubi.github.io'
     content_dir: content
     branch: main
   avatar:

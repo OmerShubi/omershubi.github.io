@@ -53,4 +53,5 @@ highlight_name: true
 first_name: Omer
 email: ""
 ---
-I am a PhD student in Data Science at the Language, Computation and Cognitition [(LaCC) Lab](https://lacclab.github.io/) at the Technion. My research explores how eye movements in reading are related to different reading tasks and to reading comprehension.
+I am a PhD student in Data Science at the Technion, working under the supervision of [Yevgeni Berzak](https://dds.technion.ac.il/academicstaff/yevgeni-berzak/) at the Language, Computation and Cognitition [(LaCC) Lab](https://lacclab.github.io/).
+My research explores how eye movements in reading are related to different reading tasks and to reading comprehension.

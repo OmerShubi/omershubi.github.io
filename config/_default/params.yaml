@@ -42,9 +42,8 @@ header:
 # Site footer
 
 footer:
-  widget: mega
   copyright:
-    notice: 'Edit on [GitHub](https://github.com/OmerShubi/omershubi.github.io). Brain & Eye icons by [Flaticon](https://www.flaticon.com/free-icons/deep-learning)'
+    notice: 'Edit on [GitHub](https://github.com/OmerShubi/omershubi.github.io). Brain & Eye icons by [Flaticon](https://www.flaticon.com/free-icons/deep-learning).'
     license:
       enable: false
       allow_derivatives: false

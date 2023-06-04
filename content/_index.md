@@ -35,7 +35,7 @@ sections:
       date_format: Jan 2006
       items:
         - title: Research Assistant
-          company: Hybrid Imaging Lab, ECE Faculty, Technion
+          company: Hybrid Imaging Lab, Electrical and Computer Engineering Faculty, Technion
           company_url: ''
           company_logo: ''
           location: ''

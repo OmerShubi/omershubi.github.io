@@ -11,6 +11,8 @@ The website is published with [Wowchemy](https://wowchemy.com/) and based on the
 * Add icons in `assets/media/icons/`
 * Update personal info in `content/authors/admin/_index.md`
 * Add pulications in `content/publication`. See upload options and specific format in the [docs](https://wowchemy.com/docs/content/publications/)
+* Update website name in `config/_default/config.yaml`.
+* Update site settings, including footer in `config/_default/params.yaml`.
 
 
 Additional documentation:

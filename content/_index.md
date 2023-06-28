@@ -59,7 +59,7 @@ sections:
         - title: Multiple Roles
           company: Watteam (Start-Up Company)
           company_url: ''
-          company_logo: ''
+          company_logo: 'watteam-logo'
           location: ''
           date_start: '2015-03-01'
           date_end: '2018-11-30'

@@ -7,7 +7,7 @@ location: Virtual
 
 summary: Short Talk at the 2023 Annual Conference on Human Sentence Processing (HSP), on the topic of eye movements in information-seeking reading.
 
-date: '2023-06-23T14:00:00Z'
+date: '2023-03-11T14:00:00Z'
 all_day: true
 
 publishDate: '2023-06-01T00:00:00Z'
@@ -19,7 +19,7 @@ featured: false
 
 
 url_code: ''
-url_pdf: ''
+url_pdf: 'hsp2023.pdf'
 url_slides: ''
 url_video: ''
 

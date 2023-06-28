@@ -36,7 +36,7 @@ sections:
       items:
         - title: Teaching
           company: Faculty of Data & Decision Sciences, Technion
-          company_url: ''
+          company_url: 'https://dds.technion.ac.il/'
           company_logo: ''
           location: ''
           date_start: '2021-10-01'

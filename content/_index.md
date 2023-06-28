@@ -12,22 +12,22 @@ sections:
       title: About Me
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-  - block: features
-    content:
-      title: Skills
-      items:
-        - name: Programming
-          description: "**Python**, R, bash, git, LaTeX"
-          icon: code
-          icon_pack: fa
-        - name: "Brain Modelling"
-          description: MNE
-          icon: brain
-          icon_pack: custom
-        - name: Eye Movements Modelling
-          description: Integration with Large Language Models
-          icon: eye
-          icon_pack: custom
+  # - block: features
+  #   content:
+  #     title: Skills
+  #     items:
+  #       - name: Programming
+  #         description: "**Python**, R, bash, git, LaTeX"
+  #         icon: code
+  #         icon_pack: fa
+  #       - name: "Brain Modelling"
+  #         description: MNE
+  #         icon: brain
+  #         icon_pack: custom
+  #       - name: Eye Movements Modelling
+  #         description: Integration with Large Language Models
+  #         icon: eye
+  #         icon_pack: custom
   - block: experience
     id: experience
     content:

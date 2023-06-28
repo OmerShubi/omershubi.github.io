@@ -14,8 +14,7 @@ address:
 summary: An invited talk at the 2023 Workshop on Predicting Reading Comprehension from Eye Movements, discussing the latest advancements in the field.
 
 date: '2023-06-23T14:00:00Z'
-date_end: '2023-06-23T14:45:00Z'
-all_day: false
+all_day: true
 
 publishDate: '2023-06-01T00:00:00Z'
 

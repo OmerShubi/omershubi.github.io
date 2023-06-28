@@ -58,6 +58,17 @@ sections:
             * Customer Satisfaction Manager.
             
             * Project & Lab Manager.
+        - title: Teaching
+          company: Faculty of Data & Decision Sciences, Technion
+          company_url: ''
+          company_logo: ''
+          location: ''
+          date_start: '2021-10-01'
+          date_end: '2023-09-30'
+          description: |2-
+          * Head Teaching Assistant for Language, Computation & Cognition (Joint course; Spring 2022 & Spring 2023).
+          * Teaching Assistant for Database Management (Undergraduate course; Winter 2022 and Winter 2023).
+          * Mentoring undergrad final project (Spring 2023).
     design:
       columns: '2'
   # - block: accomplishments

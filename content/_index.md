@@ -48,7 +48,7 @@ sections:
         - title: Research Assistant
           company: Hybrid Imaging Lab, Electrical and Computer Engineering Faculty, Technion
           company_url: 'https://webee.technion.ac.il/people/yoav/lab-and-group/'
-          company_logo: 'lab-logo.gif'
+          company_logo: lab-logo
           location: ''
           date_start: '2019-09-01'
           date_end: '2021-09-30'

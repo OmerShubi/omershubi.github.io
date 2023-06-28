@@ -59,7 +59,7 @@ sections:
         - title: Multiple Roles
           company: Watteam (Start-Up Company)
           company_url: ''
-          company_logo: 'watteam-logo'
+          company_logo: 'watteam-logo.webp'
           location: ''
           date_start: '2015-03-01'
           date_end: '2018-11-30'
@@ -149,6 +149,16 @@ sections:
       columns: '2'
       view: card
   - block: collection
+    id: talks
+    content:
+      title: Recent & Upcoming Talks
+      filters:
+        folders:
+          - event
+    design:
+      columns: '2'
+      view: compact
+  - block: collection
     content:
       count: 10
       title: Recent Publications
@@ -163,16 +173,6 @@ sections:
     design:
       columns: '2'
       view: compact
-  # - block: collection
-  #   id: talks
-  #   content:
-  #     title: Recent & Upcoming Talks
-  #     filters:
-  #       folders:
-  #         - event
-  #   design:
-  #     columns: '2'
-  #     view: compact
   # - block: tag_cloud
   #   content:
   #     title: Popular Topics

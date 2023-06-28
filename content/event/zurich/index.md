@@ -1,5 +1,5 @@
 ---
-title: Invited Talk on Predicting Reading Comprehension from Eye Movements
+title: Eye Movements and Reading Comprehension in Ordinary versus Information-Seeking Reading
 
 event: 2023 Workshop on Predicting Reading Comprehension from Eye Movements
 
@@ -13,8 +13,8 @@ address:
 
 summary: An invited talk at the 2023 Workshop on Predicting Reading Comprehension from Eye Movements, discussing the latest advancements in the field.
 
-date: '2023-06-01T14:00:00Z'
-date_end: '2023-06-01T14:45:00Z'
+date: '2023-06-23T14:00:00Z'
+date_end: '2023-06-23T14:45:00Z'
 all_day: false
 
 publishDate: '2023-06-01T00:00:00Z'

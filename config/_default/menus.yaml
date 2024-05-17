@@ -18,10 +18,10 @@ main:
     weight: 30
   - name: Publications
     url: '#featured'
-    weight: 50
+    weight: 40
   - name: Talks
     url: '#talks'
-    weight: 40
+    weight: 50
   - name: Contact
     url: '#contact'
     weight: 60

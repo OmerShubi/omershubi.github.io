@@ -1,6 +1,6 @@
 ---
 title: Omer Shubi
-role: PhD Student Data Science 
+role: PhD Candidate Data Science 
 bio: My research explores how eye movements in reading are related to different
   reading tasks and to reading comprehension.
 interests:
@@ -36,7 +36,7 @@ organizations:
     url: https://www.technion.ac.il/en/home-2/
 education:
   courses:
-    - course: PhD Student in Data Science
+    - course: PhD Candidate in Data Science
       institution: Technion - Israel Institute of Technology
       year: "2023 - Present"
     - course: Master as part of a direct-track to PhD in Data Science
@@ -53,5 +53,5 @@ highlight_name: true
 first_name: Omer
 email: ""
 ---
-I am a PhD student in Data Science at the Technion, working under the supervision of [Yevgeni Berzak](https://dds.technion.ac.il/academicstaff/yevgeni-berzak/) at the Language, Computation and Cognitition [(LaCC) Lab](https://lacclab.github.io/).
+I am a PhD candidate in Data Science at the Technion, working under the supervision of [Yevgeni Berzak](https://dds.technion.ac.il/academicstaff/yevgeni-berzak/) at the Language, Computation and Cognition [(LaCC) Lab](https://lacclab.github.io/).
 My research explores how eye movements in reading are related to different reading tasks and to reading comprehension.

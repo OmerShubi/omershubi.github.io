@@ -21,6 +21,7 @@ The website is published with [Wowchemy](https://wowchemy.com/) and based on the
 
 * Update website name in `config/_default/config.yaml`.
 * Update site settings, including footer in `config/_default/params.yaml`.
+* For main page updates - `content/_index.md`.
 
 Additional documentation:
 

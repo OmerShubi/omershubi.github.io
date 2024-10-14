@@ -42,8 +42,8 @@ sections:
           date_start: '2021-10-01'
           date_end: '2023-09-30'
           description: |2-
-            * Head Teaching Assistant for Language, Computation & Cognition (Joint course; Spring 2022 and Spring 2023).
-            * Teaching Assistant for Database Management (Undergraduate course; Winter 2022 and Winter 2023).
+            * Head Teaching Assistant for Language, Computation & Cognition (Joint course; Spring 2024, Spring 2023 and Spring 2022).
+            * Teaching Assistant for Database Management (Undergraduate course; Winter 2023 and Winter 2022).
             * Mentoring undergrad final project (Spring 2023).
         - title: Research Assistant
           company: Hybrid Imaging Lab, Electrical and Computer Engineering Faculty, Technion

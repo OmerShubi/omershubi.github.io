@@ -1,8 +1,8 @@
 ---
 title: Omer Shubi
 role: PhD Candidate Data Science 
-bio: My research explores how eye movements in reading are related to different
-  reading tasks and to reading comprehension.
+bio: My research aims to decoding our cognitive state in language comprehension, with a focus on utilizing eye movements in reading, and neural activity while listening.
+
 interests:
   - Artificial Intelligence
   - Computational Linguistics
@@ -54,4 +54,4 @@ first_name: Omer
 email: ""
 ---
 I am a PhD candidate in Data Science at the Technion, working under the supervision of [Yevgeni Berzak](https://dds.technion.ac.il/academicstaff/yevgeni-berzak/) at the Language, Computation and Cognition [(LaCC) Lab](https://lacclab.github.io/).
-My research explores how eye movements in reading are related to different reading tasks and to reading comprehension.
+My research aims to decoding our cognitive state in language comprehension, with a focus on utilizing eye movements in reading, and neural activity while listening.

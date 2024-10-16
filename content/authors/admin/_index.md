@@ -1,7 +1,7 @@
 ---
 title: Omer Shubi
 role: PhD Candidate Data Science 
-bio: My research aims to decoding our cognitive state in language comprehension, with a focus on utilizing eye movements in reading, and neural activity while listening.
+bio: My research revolves around decoding our cognitive state in language comprehension, with a focus on utilizing eye movements in reading, and neural activity while listening.
 
 interests:
   - Artificial Intelligence

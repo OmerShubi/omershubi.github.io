@@ -7,9 +7,9 @@ The website is published with [Wowchemy](https://wowchemy.com/) and based on the
 
 ## Editing
 
-* Change favicon in `assets/media/icon.png`
-* Add icons in `assets/media/icons/`
-* Update personal info in `content/authors/admin/_index.md`
+* Change favicon in `assets/media/icon.png`.
+* Add icons in `assets/media/icons/`.
+* Update personal info in `content/authors/admin/_index.md`.
 * Add pulications in `content/publication`. See upload options and specific format in the [docs](https://wowchemy.com/docs/content/publications/). Basically:
 
     ```bash

@@ -34,17 +34,26 @@ sections:
       title: Experience
       date_format: Jan 2006
       items:
+        - title: Applied Scientist Intern
+          company: Amazon
+          company_url: 'https://www.amazon.com/'
+          company_logo: ''
+          location: ''
+          date_start: '2025-01-01'
+          date_end: '2025-12-31'
+          description: |2-
+            Project: Sequential Customer Repeated Interaction Prediction using Transformers.
         - title: Teaching
           company: Faculty of Data & Decision Sciences, Technion
           company_url: 'https://dds.technion.ac.il/'
           company_logo: ''
           location: ''
           date_start: '2021-10-01'
-          date_end: '2023-09-30'
+          date_end: ''
           description: |2-
-            * Head Teaching Assistant for Language, Computation & Cognition (Joint course; Spring 2024, Spring 2023 and Spring 2022).
-            * Teaching Assistant for Database Management (Undergraduate course; Winter 2023 and Winter 2022).
-            * Mentoring undergrad final project (Spring 2023).
+            * Head Teaching Assistant for Language, Computation & Cognition (Joint course; 2022-2026).
+            * Teaching Assistant for Database Management (Undergraduate course; 2022-2023).
+            * Mentoring undergrad final projects on eye movement modeling.
         - title: Research Assistant
           company: Hybrid Imaging Lab, Electrical and Computer Engineering Faculty, Technion
           company_url: 'https://webee.technion.ac.il/people/yoav/lab-and-group/'

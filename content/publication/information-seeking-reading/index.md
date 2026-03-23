@@ -18,7 +18,7 @@ url_source: ""
 url_video: ""
 title: Eye Movements in Information-Seeking Reading
 doi: ""
-featured: true
+featured: false
 tags: []
 projects: []
 image:

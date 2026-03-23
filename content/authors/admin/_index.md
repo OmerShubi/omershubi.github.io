@@ -1,10 +1,11 @@
 ---
 title: Omer Shubi
 role: PhD Candidate Data Science 
-bio: My research revolves around decoding our cognitive state in language comprehension, with a focus on utilizing eye movements in reading, and neural activity while listening.
+bio: Focused on the intersection of Language Processing and Machine Learning.
 
 interests:
-  - Artificial Intelligence
+  - Language Processing
+  - Machine Learning
   - Computational Linguistics
   - Cognitive Science
 social:
@@ -32,7 +33,7 @@ social:
   #   icon_pack: ai
   #   link: uploads/resume.pdf
 organizations:
-  - name: Technion - Israel Insitute of Technology
+  - name: Technion - Israel Institute of Technology
     url: https://www.technion.ac.il/en/home-2/
 education:
   courses:
@@ -54,4 +55,4 @@ first_name: Omer
 email: ""
 ---
 I am a PhD candidate in Data Science at the Technion, working under the supervision of [Yevgeni Berzak](https://dds.technion.ac.il/academicstaff/yevgeni-berzak/) at the Language, Computation and Cognition [(LaCC) Lab](https://lacclab.github.io/).
-My research aims to decoding our cognitive state in language comprehension, with a focus on utilizing eye movements in reading, and neural activity while listening.
+My research aims to decode our cognitive state in language processing, with a focus on utilizing eye movements in reading and neural activity while listening.

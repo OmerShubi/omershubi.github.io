@@ -39,8 +39,8 @@ sections:
           company_url: 'https://www.amazon.com/'
           company_logo: ''
           location: ''
-          date_start: '2025-01-01'
-          date_end: '2025-12-31'
+          date_start: '2025-05-19'
+          date_end: '2025-09-12'
           description: |2-
             Project: Sequential Customer Repeated Interaction Prediction using Transformers.
         - title: Teaching

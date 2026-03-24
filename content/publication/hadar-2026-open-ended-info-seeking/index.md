@@ -4,7 +4,7 @@ authors:
   - Cfir Avraham Hadar
   - admin
   - Yoav Meiri
-  - Amir Heshes
+  - Amit Heshes
   - Yevgeni Berzak
 author_notes:
   - "Equal contribution"

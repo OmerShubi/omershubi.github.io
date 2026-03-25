@@ -28,6 +28,21 @@ sections:
   #         description: Integration with Large Language Models
   #         icon: eye
   #         icon_pack: custom
+  - block: collection
+    id: featured
+    content:
+      title: Featured Publications
+      text: |-
+        <div style="margin-top: 1.5rem;">
+        {{% cta cta_link="./publication/" cta_text="See all publications →" %}}
+        </div>
+      filters:
+        folders:
+          - publication
+        featured_only: true
+    design:
+      columns: '2'
+      view: card
   - block: experience
     id: experience
     content:
@@ -63,7 +78,7 @@ sections:
           date_end: '2021-09-30'
           description: |2-
             * Active part in [CloudCT](cloudct.space), a 3D optical scattering tomography space mission to probe clouds.
-                        
+
             * Collaborated on developing an atmospheric lidar simulator & deep-learning-based calibration method.
         - title: Multiple Roles
           company: Watteam (Start-Up Company)
@@ -74,9 +89,9 @@ sections:
           date_end: '2018-11-30'
           description: |2-
             * Head of Business Development, China.
-            
+
             * Customer Satisfaction Manager.
-            
+
             * Project & Lab Manager.
     design:
       columns: '2'
@@ -147,38 +162,12 @@ sections:
   #     # For Showcase view, flip alternate rows?
   #     flip_alt_rows: false
   - block: collection
-    id: featured
-    content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publication
-        featured_only: true
-    design:
-      columns: '2'
-      view: card
-  - block: collection
     id: talks
     content:
       title: Recent & Upcoming Talks
       filters:
         folders:
           - event
-    design:
-      columns: '2'
-      view: compact
-  - block: collection
-    content:
-      count: 10
-      title: Recent Publications
-      text: |-
-        {{% callout note %}}
-        Quickly discover relevant content by [filtering publications](./publication/).
-        {{% /callout %}}
-      filters:
-        folders:
-          - publication
-        exclude_featured: false
     design:
       columns: '2'
       view: compact

@@ -16,22 +16,25 @@ publication_short: In *NeurIPS 2025*
 publication_types:
   - "1"
 abstract: ""
-summary: ""
+summary: "A comprehensive benchmark for predictive modeling of human reading behavior from eye movements, featuring standardized tasks, datasets, and evaluation protocols."
 date: 2025-12-01T00:00:00.000Z
 publishDate: 2025-09-01T00:00:00.000Z
 featured: true
 tags: []
 projects: []
 slides: ""
-url_pdf: ""
+url_pdf: "https://openreview.net/pdf?id=LhbYJJ3MFd"
 url_dataset: ""
-url_project: ""
+url_project: "https://eyebench.github.io/"
 url_source: ""
 url_video: ""
 url_slides: ""
 url_poster: ""
-url_code: ""
+url_code: "https://github.com/EyeBench/eyebench"
 doi: ""
+links:
+  - name: ABS
+    url: "https://openreview.net/forum?id=LhbYJJ3MFd"
 image:
   caption: ""
   focal_point: ""

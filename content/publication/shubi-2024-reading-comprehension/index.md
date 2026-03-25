@@ -2,7 +2,7 @@
 abstract: >-
   Can human reading comprehension be assessed from eye movements in reading? In this work, we address this longstanding question using large-scale eyetracking data. We focus on a cardinal and largely unaddressed variant of this question: predicting reading comprehension of a single participant for a single question from their eye movements over a single paragraph. We tackle this task using a battery of recent models from the literature, and three new multimodal language models. We evaluate the models in two different reading regimes: ordinary reading and information seeking, and examine their generalization to new textual items, new participants, and the combination of both. The evaluations suggest that the task is highly challenging, and highlight the importance of benchmarking against a strong text-only baseline. While in some cases eye movements provide improvements over such a baseline, they tend to be small. This could be due to limitations of current modelling approaches, limitations of the data, or because eye movement behavior does not sufficiently pertain to fine-grained aspects of reading comprehension processes. Our study provides an infrastructure for making further progress on this question.
 slides: ""
-url_pdf: ""
+url_pdf: "https://arxiv.org/pdf/2410.04484"
 publication_types:
   - "1"
 authors:
@@ -21,6 +21,9 @@ url_video: ""
 title: Fine-Grained Prediction of Reading Comprehension from Eye Movements
 doi: ""
 featured: true
+links:
+  - name: ABS
+    url: "https://arxiv.org/abs/2410.04484"
 tags: []
 projects: []
 image:
@@ -31,5 +34,5 @@ date: 2024-10-03T12:01:36.277Z
 url_slides: ""
 publishDate: 2024-10-03T00:00:00.000Z
 url_poster: ""
-url_code: ""
+url_code: "https://github.com/lacclab/Reading-Comprehension-Prediction"
 ---

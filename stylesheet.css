@@ -145,3 +145,111 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* Publications - lacclab style */
+.pub-badge {
+  display: inline-block;
+  background-color: #1772d0;
+  color: white;
+  padding: 2px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  white-space: nowrap;
+  font-style: normal;
+}
+
+.pub-badge a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.pub-badge a:hover,
+.pub-badge a:focus {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.pub-title {
+  font-weight: 700;
+}
+
+.pub-title a {
+  color: #222;
+  text-decoration: none;
+}
+
+.pub-title a:hover {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+.pub-links {
+  margin-top: 4px;
+}
+
+.pub-links a {
+  display: inline-block;
+  color: #222;
+  border: 1px solid #222;
+  padding: 1px 10px;
+  font-size: 12px;
+  margin-right: 3px;
+  margin-top: 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pub-links a:hover,
+.pub-links a:focus {
+  color: #1772d0;
+  border-color: #1772d0;
+  text-decoration: none;
+}
+
+.pub-hidden {
+  font-size: 13px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.15s ease;
+  text-align: justify;
+}
+
+.pub-hidden.open {
+  max-height: 200em;
+  transition: all 0.15s ease;
+}
+
+.pub-hidden p {
+  line-height: 1.5;
+  margin: 8px 0;
+  color: #444;
+}
+
+.pub-hidden pre {
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 10px;
+  background: #f8f8f8;
+  border: 1px dashed #ddd;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.pub-abstract.open {
+  border: dashed 1px #999;
+  padding: 2px 8px;
+  margin-top: 6px;
+}
+
+.pub-year {
+  color: #b5b5b5;
+  border-top: 1px solid #b5b5b5;
+  padding-top: 8px;
+  margin: 0;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: normal;
+}

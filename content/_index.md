@@ -43,6 +43,18 @@ sections:
     design:
       columns: '2'
       view: card
+  - block: markdown
+    id: media
+    content:
+      title: Media Coverage
+      text: |-
+        * **[Technion Researchers Develop AI Models That Track Eye Movements to Understand Reading Behavior](https://www.jpost.com/science/article-866551)** — *The Jerusalem Post*, 2025
+
+        * **[Eyes on Text: AI Models for Inferring Reading Intentions from Eye Movements](https://www.technion.ac.il/blog/article/%D7%A2%D7%99%D7%A0%D7%99%D7%99%D7%9D-%D7%A2%D7%9C-%D7%94%D7%98%D7%A7%D7%A1%D7%98/)** — *Technion Blog*, 2025
+
+        * **[VATAT Scholarship for Outstanding PhD Students in Data Science](https://dds.technion.ac.il/news/omer-shubi-scholarship/)** — *Faculty of Data & Decision Sciences, Technion*, 2023
+    design:
+      columns: '2'
   - block: experience
     id: experience
     content:

@@ -13,6 +13,9 @@ main:
   - name: Publications
     url: '#featured'
     weight: 20
+  - name: Media
+    url: '#media'
+    weight: 25
   - name: Experience
     url: '#experience'
     weight: 30

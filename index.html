@@ -1,0 +1,791 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Omer Shubi</title>
+
+    <meta name="author" content="Omer Shubi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon" /> -->
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+
+    <style>
+      /* fallback if stylesheet.css is missing */
+      body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; color: #222; }
+      a { color: #1772d0; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .name { font-size: 32px; font-weight: 700; }
+      .papertitle { font-weight: 600; }
+      .highlight { background: #ffffd0; padding: 1px 4px; border-radius: 4px; }
+      .tag { display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 999px; background: #eef3ff; color: #315bd6; margin-left: 6px; vertical-align: middle; }
+      .subtle { color: #666; }
+      .small { font-size: 12px; color: #666; }
+    </style>
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:900px;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;"><tbody>
+      <tr><td style="padding:0">
+
+        <!-- Header -->
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;"><tbody>
+          <tr>
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p class="name" style="text-align:center">Omer Shubi</p>
+              <p>
+                I am a PhD candidate in Data Science at the <a href="https://www.technion.ac.il/">Technion</a>, working under the supervision of <a href="https://dds.technion.ac.il/people/academic-staff/yevgeni-berzak/">Yevgeni Berzak</a> at the Language, Computation and Cognition <a href="https://lacclab.github.io/">(LaCC) Lab</a>.
+              </p>
+              <p>
+                My research aims to decode our cognitive state in language processing, with a focus on utilizing eye movements in reading and neural activity while listening.
+              </p>
+              <p style="text-align:center">
+                <a href="https://scholar.google.com/citations?user=LZnWaVEAAAAJ&hl=en">Google Scholar</a>
+                &nbsp;/&nbsp;
+                <a href="https://github.com/omershubi">GitHub</a>
+                &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/iamshubi">LinkedIn</a>
+                &nbsp;/&nbsp;
+                <a href="https://orcid.org/0000-0002-2961-5012">ORCID</a>
+              </p>
+              <p style="text-align:center">
+              💬 Contact me at:
+                <span>shubi[at]campus.technion.ac.il</span>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:37%;max-width:37%">
+              <a href="images/profile.jpg"><img alt="profile photo" src="images/profile.jpg" style="width:100%;max-width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:50%" /></a>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <!-- Publications heading -->
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto"><tbody>
+          <tr>
+            <td style="padding:16px;width:100%;vertical-align:middle">
+              <h2>📚 Publications</h2>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <!-- Publications -->
+        <table style="width:100%;border:0;border-spacing:0 12px;border-collapse:separate;margin:0 auto"><tbody>
+
+          <script>
+          function showCite(id){ document.getElementById('cite-'+id).style.display='block'; }
+          function hideCite(id){ document.getElementById('cite-'+id).style.display='none'; }
+          function toggleAbstract(id){
+            var el = document.getElementById('abs-'+id);
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+          }
+          </script>
+
+          <!-- Year: 2026 -->
+          <tr><td colspan="2" style="padding:16px 8px 0;"><h3 style="margin:0;font-size:16px;color:#999;border-bottom:1px solid #eee;padding-bottom:4px;">2026</h3></td></tr>
+
+          <!-- 1. Decoding Open-Ended Information Seeking Goals (ICLR 2026) — FEATURED -->
+          <tr bgcolor="#ffffd0">
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/hadar-2026.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://openreview.net/forum?id=fHr1uqkdsb">
+                <span class="papertitle">Decoding Open-Ended Information Seeking Goals from Eye Movements in Reading</span>
+              </a>
+              <br>
+              Cfir Avraham Hadar*,
+              <strong>Omer Shubi</strong>*,
+              <a href="https://yoavmeiri.github.io/">Yoav Meiri</a>,
+              Amit Heshes,
+              <a href="https://dds.technion.ac.il/people/academic-staff/yevgeni-berzak/">Yevgeni Berzak</a>
+              <br>
+              <em>ICLR</em>, 2026
+              <br>
+              <a href="https://openreview.net/pdf?id=fHr1uqkdsb" class="btn">PDF</a> /
+              <a href="https://openreview.net/forum?id=fHr1uqkdsb" class="btn">OpenReview</a> /
+              <a href="https://github.com/lacclab/Open-Ended-Goal-Decoding" class="btn">Code</a> /
+              <a href="javascript:void(0)" onclick="toggleAbstract('hadar2026')" class="btn">Abstract</a> /
+              <a href="javascript:void(0)" onclick="showCite('hadar2026')" class="btn">Cite</a>
+              <div id="abs-hadar2026" style="display:none">
+                <p class="subtle" style="margin:6px 0 0">
+                  We extend reading goal decoding to open-ended information seeking, showing that specific search targets can be identified from eye movement patterns during reading.
+                </p>
+              </div>
+              <div id="cite-hadar2026" class="cite-box" style="display:none">
+                <pre>@inproceedings{hadar2026decoding,
+  title={Decoding Open-Ended Information Seeking Goals from Eye Movements in Reading},
+  author={Hadar, Cfir Avraham and Shubi, Omer and Meiri, Yoav and Heshes, Amit and Berzak, Yevgeni},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2026}
+}</pre>
+                <button onclick="hideCite('hadar2026')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Year: 2025 -->
+          <tr><td colspan="2" style="padding:16px 8px 0;"><h3 style="margin:0;font-size:16px;color:#999;border-bottom:1px solid #eee;padding-bottom:4px;">2025</h3></td></tr>
+
+          <!-- 2. EyeBench (NeurIPS 2025) — FEATURED -->
+          <tr bgcolor="#ffffd0">
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/eyebench-2025.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://eyebench.github.io/">
+                <span class="papertitle">EyeBench: Predictive Modeling from Eye Movements in Reading</span>
+              </a>
+              <br>
+              <strong>Omer Shubi</strong>*,
+              <a href="https://www.cl.uzh.ch/en/research-groups/digital-linguistics/people/lab-members/reich.html">David R. Reich</a>*,
+              <a href="https://kerengruteke.github.io/">Keren Gruteke Klein</a>,
+              <a href="https://www.linkedin.com/in/yuval-angel-74346a1a4">Yuval Angel</a>,
+              <a href="https://www.uni-potsdam.de/de/cs-ml/staff/phd/prasse">Paul Prasse</a>,
+              <a href="https://www.cl.uzh.ch/en/research-groups/digital-linguistics/people/group-leader/jaeger.html">Lena A. Jäger</a>,
+              <a href="https://dds.technion.ac.il/people/academic-staff/yevgeni-berzak/">Yevgeni Berzak</a>
+              <br>
+              <em>NeurIPS</em>, 2025 <span class="tag">Benchmark</span>
+              <br>
+              <a href="https://openreview.net/pdf?id=LhbYJJ3MFd" class="btn">PDF</a> /
+              <a href="https://openreview.net/forum?id=LhbYJJ3MFd" class="btn">OpenReview</a> /
+              <a href="https://github.com/EyeBench/eyebench" class="btn">Code</a> /
+              <a href="https://eyebench.github.io/" class="btn">Project</a> /
+              <a href="javascript:void(0)" onclick="toggleAbstract('eyebench2025')" class="btn">Abstract</a> /
+              <a href="javascript:void(0)" onclick="showCite('eyebench2025')" class="btn">Cite</a>
+              <div id="abs-eyebench2025" style="display:none">
+                <p class="subtle" style="margin:6px 0 0">
+                  A comprehensive benchmark for predictive modeling of human reading behavior from eye movements, featuring standardized tasks, datasets, and evaluation protocols.
+                </p>
+              </div>
+              <div id="cite-eyebench2025" class="cite-box" style="display:none">
+                <pre>@inproceedings{shubieyebench,
+  title={EyeBench: Predictive Modeling from Eye Movements in Reading},
+  author={Shubi, Omer and Reich, David Robert and Gruteke Klein, Keren and Angel, Yuval and Prasse, Paul and J{\"a}ger, Lena Ann and Berzak, Yevgeni},
+  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
+  year={2025}
+}</pre>
+                <button onclick="hideCite('eyebench2025')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- 3. Decoding Reading Goals (ACL 2025) — FEATURED -->
+          <tr bgcolor="#ffffd0">
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/shubi-2025-goals.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2410.20779">
+                <span class="papertitle">Decoding Reading Goals from Eye Movements</span>
+              </a>
+              <br>
+              <strong>Omer Shubi</strong>*,
+              Cfir Avraham Hadar*,
+              <a href="https://dds.technion.ac.il/people/academic-staff/yevgeni-berzak/">Yevgeni Berzak</a>
+              <br>
+              <em>ACL</em>, 2025
+              <br>
+              <a href="https://arxiv.org/pdf/2410.20779" class="btn">PDF</a> /
+              <a href="https://arxiv.org/abs/2410.20779" class="btn">arXiv</a> /
+              <a href="https://github.com/lacclab/Goal-Decoding-from-Eye-Movements" class="btn">Code</a> /
+              <a href="javascript:void(0)" onclick="toggleAbstract('shubi2025goals')" class="btn">Abstract</a> /
+              <a href="javascript:void(0)" onclick="showCite('shubi2025goals')" class="btn">Cite</a>
+              <div id="abs-shubi2025goals" style="display:none">
+                <p class="subtle" style="margin:6px 0 0">
+                  We show that the goal of reading — ordinary reading vs. information seeking — can be decoded from eye movements, and that reading goal has a substantial impact on eye movement behavior.
+                </p>
+              </div>
+              <div id="cite-shubi2025goals" class="cite-box" style="display:none">
+                <pre>@inproceedings{shubi2025decoding,
+  title={Decoding Reading Goals from Eye Movements},
+  author={Shubi, Omer and Hadar, Cfir Avraham and Berzak, Yevgeni},
+  booktitle={Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL)},
+  year={2025}
+}</pre>
+                <button onclick="hideCite('shubi2025goals')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- 4. Déjà Vu (ACL 2025) -->
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/placeholder.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://aclanthology.org/2025.acl-long.956/"><span class="papertitle">Déjà Vu? Decoding Repeated Reading from Eye Movements</span></a>
+              <br>
+              <a href="https://yoavmeiri.github.io/">Yoav Meiri</a>,
+              <strong>Omer Shubi</strong>,
+              Cfir A. Hadar,
+              Ariel K. Nitzav,
+              <a href="https://dds.technion.ac.il/people/academic-staff/yevgeni-berzak/">Yevgeni Berzak</a>
+              <br>
+              <em>ACL</em>, 2025
+              <br>
+              <a href="javascript:void(0)" onclick="showCite('meiri2025')" class="btn">Cite</a>
+              <div id="cite-meiri2025" class="cite-box" style="display:none">
+                <pre>@inproceedings{meiri2025dejavu,
+  title={D{\'e}j{\`a} Vu? Decoding Repeated Reading from Eye Movements},
+  author={Meiri, Yoav and Shubi, Omer and Hadar, Cfir A. and Nitzav, Ariel K. and Berzak, Yevgeni},
+  booktitle={Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (ACL)},
+  year={2025}
+}</pre>
+                <button onclick="hideCite('meiri2025')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- 5. Text Simplification (CogSci 2025) -->
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/placeholder.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://escholarship.org/uc/item/3tb1553f"><span class="papertitle">The Effect of Text Simplification on Reading Fluency and Reading Comprehension in L1 English Speakers</span></a>
+              <br>
+              <a href="https://kerengruteke.github.io/">Keren Gruteke Klein</a>,
+              <strong>Omer Shubi</strong>,
+              Shahar Frenkel,
+              <a href="https://dds.technion.ac.il/people/academic-staff/yevgeni-berzak/">Yevgeni Berzak</a>
+              <br>
+              <em>CogSci</em>, 2025
+              <br>
+              <a href="javascript:void(0)" onclick="showCite('gruteke2025simplification')" class="btn">Cite</a>
+              <div id="cite-gruteke2025simplification" class="cite-box" style="display:none">
+                <pre>@inproceedings{gruteke2025effect,
+  title={The Effect of Text Simplification on Reading Fluency and Reading Comprehension in L1 English Speakers},
+  author={Gruteke Klein, Keren and Shubi, Omer and Frenkel, Shachar and Berzak, Yevgeni},
+  booktitle={Proceedings of the Annual Meeting of the Cognitive Science Society},
+  volume={47},
+  year={2025}
+}</pre>
+                <button onclick="hideCite('gruteke2025simplification')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- 6. OneStop (Scientific Data 2025) -->
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/placeholder.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://www.nature.com/articles/s41597-025-06272-2"><span class="papertitle">OneStop: A 360-Participant English Eye Tracking Dataset with Different Reading Regimes</span></a>
+              <br>
+              <a href="https://dds.technion.ac.il/people/academic-staff/yevgeni-berzak/">Yevgeni Berzak</a>,
+              Jonathan Malmaud,
+              <strong>Omer Shubi</strong>,
+              <a href="https://yoavmeiri.github.io/">Yoav Meiri</a>,
+              Ella Lion,
+              Roger Levy
+              <br>
+              <em>Scientific Data</em>, 2025
+              <br>
+              <a href="https://www.nature.com/articles/s41597-025-06272-2" class="btn">Paper</a> /
+              <a href="https://github.com/lacclab/OneStop-Eye-Movements" class="btn">Code</a> /
+              <a href="https://osf.io/2prdq/" class="btn">Dataset</a> /
+              <a href="https://lacclab.github.io/OneStop-Eye-Movements/" class="btn">Project</a> /
+              <a href="javascript:void(0)" onclick="showCite('berzak2025onestop')" class="btn">Cite</a>
+              <div id="cite-berzak2025onestop" class="cite-box" style="display:none">
+                <pre>@article{berzak2025onestop,
+  title={OneStop: A 360-Participant English Eye Tracking Dataset with Different Reading Regimes},
+  author={Berzak, Yevgeni and Malmaud, Jonathan and Shubi, Omer and Meiri, Yoav and Lion, Ella and Levy, Roger},
+  journal={Scientific Data},
+  year={2025}
+}</pre>
+                <button onclick="hideCite('berzak2025onestop')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- 7. Imagers for Spaceborne Cloud Tomography (IEEE TGRS 2025) -->
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/placeholder.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://ieeexplore.ieee.org/document/11131225/"><span class="papertitle">Imagers for Spaceborne Cloud Tomography</span></a>
+              <br>
+              Vadim Holodovsky,
+              Masada Tzabari,
+              <strong>Omer Shubi</strong>,
+              Eshkol Eytan,
+              Ilan Koren,
+              Orit Altaratz,
+              Klaus Schilling,
+              Yoav Y. Schechner
+              <br>
+              <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2025
+              <br>
+              <a href="javascript:void(0)" onclick="showCite('holodovsky2025')" class="btn">Cite</a>
+              <div id="cite-holodovsky2025" class="cite-box" style="display:none">
+                <pre>@article{holodovsky2025imagers,
+  title={Imagers for Spaceborne Cloud Tomography},
+  author={Holodovsky, Vadim and Tzabari, Masada and Shubi, Omer and Eytan, Eshkol and Koren, Ilan and Altaratz, Orit and Schilling, Klaus and Schechner, Yoav Y.},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  year={2025}
+}</pre>
+                <button onclick="hideCite('holodovsky2025')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Year: 2024 -->
+          <tr><td colspan="2" style="padding:16px 8px 0;"><h3 style="margin:0;font-size:16px;color:#999;border-bottom:1px solid #eee;padding-bottom:4px;">2024</h3></td></tr>
+
+          <!-- 8. Fine-Grained Prediction of Reading Comprehension (EMNLP 2024) — FEATURED -->
+          <tr bgcolor="#ffffd0">
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/shubi-2024-rc.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2410.04484">
+                <span class="papertitle">Fine-Grained Prediction of Reading Comprehension from Eye Movements</span>
+              </a>
+              <br>
+              <strong>Omer Shubi</strong>,
+              <a href="https://yoavmeiri.github.io/">Yoav Meiri</a>,
+              Cfir Avraham Hadar,
+              <a href="https://dds.technion.ac.il/people/academic-staff/yevgeni-berzak/">Yevgeni Berzak</a>
+              <br>
+              <em>EMNLP</em>, 2024
+              <br>
+              <a href="https://arxiv.org/pdf/2410.04484" class="btn">PDF</a> /
+              <a href="https://arxiv.org/abs/2410.04484" class="btn">arXiv</a> /
+              <a href="https://github.com/lacclab/Reading-Comprehension-Prediction" class="btn">Code</a> /
+              <a href="javascript:void(0)" onclick="toggleAbstract('shubi2024rc')" class="btn">Abstract</a> /
+              <a href="javascript:void(0)" onclick="showCite('shubi2024rc')" class="btn">Cite</a>
+              <div id="abs-shubi2024rc" style="display:none">
+                <p class="subtle" style="margin:6px 0 0">
+                  This study investigates the challenge of predicting individual reading comprehension on a single passage level from eye movements using large-scale eyetracking data.
+                </p>
+              </div>
+              <div id="cite-shubi2024rc" class="cite-box" style="display:none">
+                <pre>@inproceedings{shubi2024finegrained,
+  title={Fine-Grained Prediction of Reading Comprehension from Eye Movements},
+  author={Shubi, Omer and Meiri, Yoav and Hadar, Cfir Avraham and Berzak, Yevgeni},
+  booktitle={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year={2024}
+}</pre>
+                <button onclick="hideCite('shubi2024rc')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- 9. Effect of Word Predictability (CoNLL 2024) -->
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/gruteke-2024.jpg" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://aclanthology.org/2024.conll-1.17/">
+                <span class="papertitle">The Effect of Word Predictability on Reading Times in Information Seeking and Repeated Reading</span>
+              </a>
+              <br>
+              <a href="https://kerengruteke.github.io/">Keren Gruteke Klein</a>,
+              <a href="https://yoavmeiri.github.io/">Yoav Meiri</a>,
+              <strong>Omer Shubi</strong>,
+              <a href="https://dds.technion.ac.il/people/academic-staff/yevgeni-berzak/">Yevgeni Berzak</a>
+              <br>
+              <em>CoNLL</em>, 2024
+              <br>
+              <a href="https://aclanthology.org/2024.conll-1.17/" class="btn">Paper</a> /
+              <a href="javascript:void(0)" onclick="showCite('gruteke2024')" class="btn">Cite</a>
+              <div id="cite-gruteke2024" class="cite-box" style="display:none">
+                <pre>@inproceedings{klein-etal-2024-effect,
+  title={The Effect of Word Predictability on Reading Times in Information Seeking and Repeated Reading},
+  author={Gruteke Klein, Keren and Meiri, Yoav and Shubi, Omer and Berzak, Yevgeni},
+  booktitle={Proceedings of the 28th Conference on Computational Natural Language Learning (CoNLL)},
+  year={2024},
+  doi={10.18653/v1/2024.conll-1.17}
+}</pre>
+                <button onclick="hideCite('gruteke2024')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- 10. MS-TCRNet (Pattern Recognition 2024) -->
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/placeholder.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320324005296"><span class="papertitle">MS-TCRNet: Multi-Stage Temporal Convolutional Recurrent Networks for Action Segmentation Using Sensor-Augmented Kinematics</span></a>
+              <br>
+              Adam Goldbraikh,
+              <strong>Omer Shubi</strong>,
+              Or Rubin,
+              Carla M. Pugh,
+              Shlomi Laufer
+              <br>
+              <em>Pattern Recognition</em>, 2024
+              <br>
+              <a href="javascript:void(0)" onclick="showCite('goldbraikh2024')" class="btn">Cite</a>
+              <div id="cite-goldbraikh2024" class="cite-box" style="display:none">
+                <pre>@article{goldbraikh2024mstcrnet,
+  title={MS-TCRNet: Multi-Stage Temporal Convolutional Recurrent Networks for Action Segmentation Using Sensor-Augmented Kinematics},
+  author={Goldbraikh, Adam and Shubi, Omer and Rubin, Or and Pugh, Carla M. and Laufer, Shlomi},
+  journal={Pattern Recognition},
+  year={2024}
+}</pre>
+                <button onclick="hideCite('goldbraikh2024')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Year: 2023 -->
+          <tr><td colspan="2" style="padding:16px 8px 0;"><h3 style="margin:0;font-size:16px;color:#999;border-bottom:1px solid #eee;padding-bottom:4px;">2023</h3></td></tr>
+
+          <!-- 11. Eye Movements in Information-Seeking Reading (CogSci 2023) -->
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/info-seeking-reading.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://escholarship.org/uc/item/6019k40d"><span class="papertitle">Eye Movements in Information-Seeking Reading</span></a>
+              <br>
+              <strong>Omer Shubi</strong>,
+              <a href="https://dds.technion.ac.il/people/academic-staff/yevgeni-berzak/">Yevgeni Berzak</a>
+              <br>
+              <em>CogSci</em>, 2023
+              <br>
+              <a href="javascript:void(0)" onclick="toggleAbstract('shubi2023')" class="btn">Abstract</a> /
+              <a href="javascript:void(0)" onclick="showCite('shubi2023')" class="btn">Cite</a>
+              <div id="abs-shubi2023" style="display:none">
+                <p class="subtle" style="margin:6px 0 0">
+                  In this work, we use question answering as a general framework for studying how eye movements in reading reflect the reader's goals, how they are pursued, and the extent to which they are achieved. We leverage fine-grained annotations of task-critical textual information to perform a detailed comparison of eye movements in information-seeking and ordinary reading regimes.
+                </p>
+              </div>
+              <div id="cite-shubi2023" class="cite-box" style="display:none">
+                <pre>@inproceedings{shubi2023eye,
+  title={Eye Movements in Information-Seeking Reading},
+  author={Shubi, Omer and Berzak, Yevgeni},
+  booktitle={Proceedings of the Annual Meeting of the Cognitive Science Society},
+  year={2023}
+}</pre>
+                <button onclick="hideCite('shubi2023')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Year: 2022 -->
+          <tr><td colspan="2" style="padding:16px 8px 0;"><h3 style="margin:0;font-size:16px;color:#999;border-bottom:1px solid #eee;padding-bottom:4px;">2022</h3></td></tr>
+
+          <!-- 12. Settings for Spaceborne 3-D Scattering Tomography (IEEE TGRS 2022) -->
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/tzabari-2022-settings.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://doi.org/10.1109/TGRS.2022.3198525">
+                <span class="papertitle">Settings for Spaceborne 3-D Scattering Tomography of Liquid-Phase Clouds by the CloudCT Mission</span>
+              </a>
+              <br>
+              Masada Tzabari,
+              Vadim Holodovsky,
+              <strong>Omer Shubi</strong>,
+              Eshkol Eytan,
+              Ilan Koren,
+              Yoav Y. Schechner
+              <br>
+              <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2022
+              <br>
+              <a href="data/tzabari-2022-settings.pdf" class="btn">PDF</a> /
+              <a href="javascript:void(0)" onclick="toggleAbstract('tzabari2022')" class="btn">Abstract</a> /
+              <a href="javascript:void(0)" onclick="showCite('tzabari2022')" class="btn">Cite</a>
+              <div id="abs-tzabari2022" style="display:none">
+                <p class="subtle" style="margin:6px 0 0">
+                  We introduce a comprehensive method for space-borne 3-D volumetric scattering-tomography of cloud microphysics, developed for the CloudCT mission. The retrieved microphysical properties are the liquid-water-content (LWC) and effective droplet radius within a cloud.
+                </p>
+              </div>
+              <div id="cite-tzabari2022" class="cite-box" style="display:none">
+                <pre>@article{tzabari2022settings,
+  title={Settings for Spaceborne 3-D Scattering Tomography of Liquid-Phase Clouds by the CloudCT Mission},
+  author={Tzabari, Masada and Holodovsky, Vadim and Shubi, Omer and Eytan, Eshkol and Koren, Ilan and Schechner, Yoav Y.},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  year={2022},
+  doi={10.1109/TGRS.2022.3198525}
+}</pre>
+                <button onclick="hideCite('tzabari2022')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- 13. ALiDAn (IEEE TGRS 2022) -->
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/vainiger-2022-alidan.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://doi.org/10.1109/TGRS.2022.3201436">
+                <span class="papertitle">ALiDAn: Spatiotemporal and Multiwavelength Atmospheric Lidar Data Augmentation</span>
+              </a>
+              <br>
+              Adi Vainiger,
+              <strong>Omer Shubi</strong>,
+              Yoav Y. Schechner,
+              Zhenping Yin,
+              Holger Baars,
+              Birgit Heese,
+              Dietrich Althausen
+              <br>
+              <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2022
+              <br>
+              <a href="javascript:void(0)" onclick="toggleAbstract('vainiger2022alidan')" class="btn">Abstract</a> /
+              <a href="javascript:void(0)" onclick="showCite('vainiger2022alidan')" class="btn">Cite</a>
+              <div id="abs-vainiger2022alidan" style="display:none">
+                <p class="subtle" style="margin:6px 0 0">
+                  Methods based on statistical learning have become prevalent in various signal processing disciplines and have recently gained traction in atmospheric lidar studies. We propose the Atmospheric Lidar Data Augmentation (ALiDAn) framework to fill this gap.
+                </p>
+              </div>
+              <div id="cite-vainiger2022alidan" class="cite-box" style="display:none">
+                <pre>@article{vainiger2022alidan,
+  title={ALiDAn: Spatiotemporal and Multiwavelength Atmospheric Lidar Data Augmentation},
+  author={Vainiger, Adi and Shubi, Omer and Schechner, Yoav Y. and Yin, Zhenping and Baars, Holger and Heese, Birgit and Althausen, Dietrich},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  year={2022},
+  doi={10.1109/TGRS.2022.3201436}
+}</pre>
+                <button onclick="hideCite('vainiger2022alidan')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- 14. Supervised Learning Calibration (IGARSS 2022) -->
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/placeholder.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://doi.org/10.1109/IGARSS46834.2022.9883078">
+                <span class="papertitle">Supervised Learning Calibration of an Atmospheric LiDAR</span>
+              </a>
+              <br>
+              Adi Vainiger,
+              <strong>Omer Shubi</strong>,
+              Yoav Y. Schechner,
+              Zhenping Yin,
+              Holger Baars,
+              Birgit Heese,
+              Dietrich Althausen
+              <br>
+              <em>IGARSS</em>, 2022
+              <br>
+              <a href="data/vainiger-2022-supervised.pdf" class="btn">PDF</a> /
+              <a href="javascript:void(0)" onclick="toggleAbstract('vainiger2022supervised')" class="btn">Abstract</a> /
+              <a href="javascript:void(0)" onclick="showCite('vainiger2022supervised')" class="btn">Cite</a>
+              <div id="abs-vainiger2022supervised" style="display:none">
+                <p class="subtle" style="margin:6px 0 0">
+                  Calibration of an atmospheric lidar is often required due to variations in the electro-optical system. We present a novel deep-learning (DL) lidar calibration model based on convolutional neural networks (CNN).
+                </p>
+              </div>
+              <div id="cite-vainiger2022supervised" class="cite-box" style="display:none">
+                <pre>@inproceedings{vainiger2022supervised,
+  title={Supervised Learning Calibration of an Atmospheric LiDAR},
+  author={Vainiger, Adi and Shubi, Omer and Schechner, Yoav Y. and Yin, Zhenping and Baars, Holger and Heese, Birgit and Althausen, Dietrich},
+  booktitle={IGARSS 2022-2022 IEEE International Geoscience and Remote Sensing Symposium},
+  year={2022},
+  doi={10.1109/IGARSS46834.2022.9883078}
+}</pre>
+                <button onclick="hideCite('vainiger2022supervised')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- Year: 2021 -->
+          <tr><td colspan="2" style="padding:16px 8px 0;"><h3 style="margin:0;font-size:16px;color:#999;border-bottom:1px solid #eee;padding-bottom:4px;">2021</h3></td></tr>
+
+          <!-- 15. CloudCT SPIE (2021) -->
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/tzabari-2021-cloudct.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://doi.org/10.1117/12.2594134">
+                <span class="papertitle">CloudCT 3D Volumetric Tomography: Considerations for Imager Preference, Comparing Visible Light, Short-Wave Infrared, and Polarized Imagers</span>
+              </a>
+              <br>
+              Masada Tzabari,
+              Vadim Holodovsky,
+              <strong>Omer Shubi</strong>,
+              Eshkol Eytan,
+              Orit Altaratz,
+              Ilan Koren,
+              Anna Aumann,
+              Klaus Schilling,
+              Yoav Y. Schechner
+              <br>
+              <em>Polarization Science and Remote Sensing X</em>, 2021
+              <br>
+              <a href="data/tzabari-2021-cloudct.pdf" class="btn">PDF</a> /
+              <a href="javascript:void(0)" onclick="toggleAbstract('tzabari2021')" class="btn">Abstract</a> /
+              <a href="javascript:void(0)" onclick="showCite('tzabari2021')" class="btn">Cite</a>
+              <div id="abs-tzabari2021" style="display:none">
+                <p class="subtle" style="margin:6px 0 0">
+                  The CloudCT project is a mission that aims to demonstrate 3D volumetric scattering tomography of clouds. A formation of ten nanosatellites will simultaneously image cloud fields from multiple directions, at approximately 20m nadir ground resolution.
+                </p>
+              </div>
+              <div id="cite-tzabari2021" class="cite-box" style="display:none">
+                <pre>@inproceedings{tzabari2021cloudct,
+  title={CloudCT 3D Volumetric Tomography: Considerations for Imager Preference, Comparing Visible Light, Short-Wave Infrared, and Polarized Imagers},
+  author={Tzabari, Masada and Holodovsky, Vadim and Shubi, Omer and Eytan, Eshkol and Altaratz, Orit and Koren, Ilan and Aumann, Anna and Schilling, Klaus and Schechner, Yoav Y.},
+  booktitle={Polarization Science and Remote Sensing X},
+  year={2021},
+  doi={10.1117/12.2594134}
+}</pre>
+                <button onclick="hideCite('tzabari2021')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+          <!-- 16. CloudCT EGU (2021) -->
+          <tr>
+            <td style="padding:16px;width:20%;vertical-align:middle">
+              <div class="one">
+                <img src="images/placeholder.png" width="100%" />
+              </div>
+            </td>
+            <td style="padding:8px;width:80%;vertical-align:middle">
+              <a href="https://doi.org/10.5194/egusphere-egu21-9585">
+                <span class="papertitle">CloudCT 3D Volumetric Tomography — Mission Advances</span>
+              </a>
+              <br>
+              Masada Tzabari,
+              Vadim Holodovsky,
+              <strong>Omer Shubi</strong>,
+              Eshkol Eytan,
+              Orit Altaratz,
+              Ilan Koren,
+              Anna Aumann,
+              Klaus Schilling,
+              Yoav Y. Schechner
+              <br>
+              <em>EGU General Assembly</em>, 2021
+              <br>
+              <a href="javascript:void(0)" onclick="showCite('holodovsky2021')" class="btn">Cite</a>
+              <div id="cite-holodovsky2021" class="cite-box" style="display:none">
+                <pre>@inproceedings{holodovsky2021cloudct,
+  title={CloudCT 3D Volumetric Tomography — Mission Advances},
+  author={Tzabari, Masada and Holodovsky, Vadim and Shubi, Omer and Eytan, Eshkol and Altaratz, Orit and Koren, Ilan and Aumann, Anna and Schilling, Klaus and Schechner, Yoav},
+  booktitle={EGU General Assembly Conference Abstracts},
+  year={2021},
+  doi={10.5194/egusphere-egu21-9585}
+}</pre>
+                <button onclick="hideCite('holodovsky2021')">Close</button>
+              </div>
+            </td>
+          </tr>
+
+        </tbody></table>
+
+        <!-- Talks & Presentations -->
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:12px auto 0"><tbody>
+          <tr>
+            <td style="padding:16px;width:100%;vertical-align:middle">
+              <h2>🎤 Talks & Presentations</h2>
+              <ul style="margin-top:0">
+                <li><a href="https://acl2025-eyetracking-and-nlp.github.io/"><strong>Eye Tracking and NLP</strong></a> — Tutorial at ACL 2025, Vienna, Austria (2025).</li>
+                <li><strong>Decoding Reading Goals from Eye Movements</strong> — Talk at the 3rd Workshop on Eye Movements and the Assessment of Reading Comprehension, University of Stuttgart (2025).</li>
+                <li><strong>Data Science meets Cognitive Science: Decoding Cognitive State during Language Processing</strong> — Data Club, Faculty of Data & Decision Sciences, Technion (2024; 2025).</li>
+                <li><strong>Non-ordinary Reading as a Frontier for Predictive Modeling and Psycholinguistics</strong> — Computational Psycholinguistics Lab, Dept. of Brain & Cognitive Sciences, MIT (2024).</li>
+                <li><strong>Fine-Grained Prediction of Reading Comprehension from Eye Movements</strong> — Talk at the 2nd Workshop on Eye Movements and the Assessment of Reading Comprehension, University of Zurich; Talk at ISCOL, Haifa; and Poster at Highlights in the Language Sciences Conference, Nijmegen, Netherlands (2024).</li>
+                <li><strong>Eye Movements and Neural Traces of Ordinary and Information-Seeking Language Comprehension</strong> — Computational Psycholinguistics Lab, Dept. of Brain & Cognitive Sciences, MIT (2023).</li>
+                <li><strong>Eye Movements and Reading Comprehension in Ordinary versus Information-Seeking Reading</strong> — Invited talk at the Workshop on Predicting Reading Comprehension from Eye Movements, University of Zurich (2023).</li>
+                <li><strong>Eye Movements in Information-Seeking Reading</strong> — Short talk at the Annual Conference on Human Sentence Processing (HSP), Virtual (2023).</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <!-- Media Coverage -->
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto"><tbody>
+          <tr>
+            <td style="padding:16px;width:100%;vertical-align:middle">
+              <h2>📰 Media Coverage</h2>
+              <ul style="margin-top:0">
+                <li><a href="https://www.jpost.com/science/article-866551"><strong>Technion Researchers Develop AI Models That Track Eye Movements to Understand Reading Behavior</strong></a> — <em>The Jerusalem Post</em>, 2025.</li>
+                <li><a href="https://www.technion.ac.il/en/blog/article/eyes-on-the-text/"><strong>Eyes on Text: AI Models for Inferring Reading Intentions from Eye Movements</strong></a> — <em>Technion Blog</em>, 2025.</li>
+                <li><a href="https://dds.technion.ac.il/omer-shubi-wins-prestigious-vatat-scholarship-for-outstanding-phd-students-in-data-science/"><strong>VATAT Scholarship for Outstanding PhD Students in Data Science</strong></a> — <em>Faculty of Data & Decision Sciences, Technion</em>, 2023.</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <!-- Bio -->
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto"><tbody>
+          <tr>
+            <td style="padding:16px;width:100%;vertical-align:top">
+              <h2>Bio</h2>
+              <p style="margin-top:0">
+                <strong>🎓 Education.</strong>
+                <ul style="margin-top:4px; margin-bottom:0;">
+                  <li>PhD Candidate in Data Science, Technion — Israel Institute of Technology (2023–Present)</li>
+                  <li>MSc (Direct Track to PhD) in Data Science, Technion — Israel Institute of Technology (2021–2023)</li>
+                  <li>BSc in Data Science & Engineering, Technion — Israel Institute of Technology (2017–2021)</li>
+                </ul>
+                <br/>
+                <strong>🏆 Awards.</strong>
+                <ul style="margin-top:4px; margin-bottom:0;">
+                  <li>Israeli Council for Higher Education (VATAT) Scholarship for Outstanding PhD Students in Data Science (2023–2026)</li>
+                  <li>First place in a medical datathon organized by the Technion, Rambam and MIT (2022)</li>
+                  <li>Leonard and Diane Sherman Interdisciplinary Graduate School Fellowship (2021)</li>
+                  <li>Excellence Deans Support Scholarship: Merit scholarship for Technion alumni (2021–2022)</li>
+                  <li>Undergraduate Presidents List — 3 Semesters (2020–2021)</li>
+                </ul>
+                <br/><br/>
+                <strong>💼 Industry.</strong>
+                <ul style="margin-top:4px; margin-bottom:0;">
+                  <li>Applied Scientist Intern, Amazon (May–Sep 2025)</li>
+                  <li>Research Assistant, Hybrid Imaging Lab, Technion (2019–2021)</li>
+                  <li>Head of Business Development (China) / Customer Satisfaction Manager / Project & Lab Manager, Watteam (2015–2018)</li>
+                </ul>
+                <br/>
+                <strong>👨‍🏫 Teaching.</strong>
+                <ul style="margin-top:4px; margin-bottom:0;">
+                  <li>Head Teaching Assistant, Language, Computation & Cognition (2022–2026)</li>
+                  <li>Teaching Assistant, Database Management (2022–2023)</li>
+                </ul>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <p class="small" style="text-align:center;margin:32px 0 10px">
+        Last updated: Apr 2026
+        </p>
+
+      </td></tr>
+    </tbody></table>
+  </body>
+</html>

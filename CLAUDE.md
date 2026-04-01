@@ -6,32 +6,37 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 - When encountering author names that use only a first initial (e.g., "C. A. Hadar", "K. Gruteke Klein"), always ask the user for the full first name. Do not guess or assume what the initial stands for.
 
-## Build & Dev Commands
-
-- **Local dev server:** `hugo server --buildDrafts --disableFastRender` (port 1313)
-- **Production build:** `hugo --gc --minify`
-- **Update theme modules:** `hugo mod get -u ./... && hugo mod tidy`
-
 ## Architecture
 
-Hugo academic website using the **Wowchemy Academic theme v5** (via Go modules). Deployed to **GitHub Pages** via GitHub Actions (`.github/workflows/hugo.yml`).
+Plain HTML + CSS personal academic website based on the [Jon Barron template](https://github.com/jonbarron/jonbarron.github.io), adapted from [Keren Gruteke Klein's fork](https://github.com/KerenGruteke/KerenGruteke.github.io). Deployed to **GitHub Pages** via GitHub Actions (`.github/workflows/hugo.yml`).
+
+No build step required — the site is a single `index.html` file with a `stylesheet.css`.
 
 ### Key Files
 
-- `config/_default/config.yaml` — Hugo config, module imports, permalinks
-- `config/_default/params.yaml` — Theme appearance, SEO, features, footer
-- `config/_default/menus.yaml` — Navigation menu items
-- `content/_index.md` — **Homepage layout**: defines all homepage sections (About, Experience, Featured Publications, Talks, Recent Publications, Contact) as Wowchemy widget blocks. Experience entries are inline YAML here, not separate files.
-- `content/authors/admin/_index.md` — Author profile (bio, interests, education, social links). `admin` is the key used to reference "Omer Shubi" in publication author lists.
-- `layouts/_default/baseof.html` — Local override of Wowchemy's baseof.html to fix `.File.UniqueID` bug for Hugo 0.123+ compatibility. Do not remove.
-- `layouts/partials/analytics/google_analytics.html` — Override for Hugo 0.120+ deprecation of `.Site.GoogleAnalytics`.
+- `index.html` — The entire website (single page: bio, publications, talks, media, CV)
+- `stylesheet.css` — Lato font, link colors (#1772d0 blue, #f09228 orange hover)
+- `images/` — Profile photo and publication thumbnails
+- `data/` — Local PDFs for publications and talks
+- `googled98bb8c924bffabb.html` — Google Search Console verification
+- `.github/workflows/hugo.yml` — GitHub Actions workflow for static site deployment
 
-### Content Types
+### Content Sections (in index.html)
 
-- **Publications** (`content/publication/<slug>/index.md`): Use `publication_types: ["1"]` for conference papers, `["2"]` for journal articles. Use `admin` for Omer Shubi in the `authors` list. Set `featured: true` for papers to appear in the Featured Publications homepage section. Use `author_notes: ["Equal contribution", "Equal contribution"]` for shared first-authorship (marked with * in papers).
-- **Events/Talks** (`content/event/<slug>/index.md`): Rendered at `/talk/<slug>/` (see permalinks config).
-- **Author profiles** (`content/authors/<name>/_index.md`): `admin` is the primary author.
+1. **Header** — Name, bio, social links (Scholar, GitHub, LinkedIn, ORCID), profile photo
+2. **Publications** — All papers with titles, authors, venues, links, abstracts, and BibTeX citations. Featured papers have yellow background (`bgcolor="#ffffd0"`). Equal contributions marked with asterisk (*).
+3. **Talks & Presentations** — Bulleted list of conference talks and tutorials
+4. **Media Coverage** — Press mentions
+5. **Bio** — Education, Awards, Industry Experience, Teaching
+
+### Adding a New Publication
+
+Add a new `<tr>` row in the publications `<table>` in `index.html`. Follow the existing pattern:
+- Image in left column (20% width), content in right column (80%)
+- Use `<strong>Omer Shubi</strong>` for self-citation (bold)
+- Use `bgcolor="#ffffd0"` on `<tr>` for featured/highlighted papers
+- Add BibTeX in a hidden `<div>` with `showCite`/`hideCite` toggle
 
 ### Deployment
 
-Push to `main` triggers GitHub Actions which runs `hugo mod get -u ./...` (auto-updates modules), builds with Hugo extended 0.152.2, and deploys to GitHub Pages. The `netlify.toml` is legacy and unused.
+Push to `main` triggers GitHub Actions which deploys the root directory as a static site to GitHub Pages. No build step needed.

@@ -1,29 +1,20 @@
+# omershubi.github.io
 
-# My Website
+Personal academic website for [Omer Shubi](https://omershubi.github.io) — PhD candidate in Data Science at the Technion.
 
-This repository holds the source files for my personal website [omershubi.github.io](https://omershub.github.io).
+## Structure
 
-The website is published with [Wowchemy](https://wowchemy.com/) and based on the [Hugo Academic Theme](https://github.com/wowchemy/starter-hugo-academic).
+Plain HTML + CSS, no build step required.
 
-## Editing
+- `index.html` — The entire website (bio, publications, talks, media, CV)
+- `stylesheet.css` — Styles (Lato font, link colors)
+- `images/` — Profile photo and publication thumbnails
+- `data/` — PDFs for publications and talks
 
-* Change favicon in `assets/media/icon.png`.
-* Add icons in `assets/media/icons/`.
-* Update personal info in `content/authors/admin/_index.md`.
-* Add pulications in `content/publication`. See upload options and specific format in the [docs](https://wowchemy.com/docs/content/publications/). Basically:
+## Deployment
 
-    ```bash
-    conda activate academic
-    academic import --bibtex data/publications.bib
-    ```
+Push to `main` triggers a GitHub Actions workflow (`.github/workflows/hugo.yml`) that deploys the root directory as a static site to GitHub Pages.
 
-    Then edit the generated files in `content/publication/` to add pdfs, links, etc.
+## Credits
 
-* Update website name in `config/_default/config.yaml`.
-* Update site settings, including footer in `config/_default/params.yaml`.
-* For main page updates - `content/_index.md`.
-
-Additional documentation:
-
-* [https://wowchemy.com/docs/](https://wowchemy.com/docs/getting-started/get-started/)
-* [Using the CMS](https://wowchemy.com/docs/getting-started/hugo-cms/)
+Based on the [Jon Barron template](https://github.com/jonbarron/jonbarron.github.io), adapted from [Keren Gruteke Klein's fork](https://github.com/KerenGruteke/KerenGruteke.github.io).

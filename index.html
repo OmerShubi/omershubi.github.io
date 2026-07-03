@@ -10,7 +10,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="canonical" href="https://omershubi.github.io/" />
-    <!-- <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon" /> -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Set theme before paint to avoid a flash (light is the default) -->
+    <script>
+      (function () {
+        try {
+          if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 
     <!-- Open Graph -->
@@ -65,26 +87,39 @@
     </script>
 
     <style>
-      /* fallback if stylesheet.css is missing */
-      body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; color: #222; }
-      a { color: #1772d0; text-decoration: none; }
-      a:hover { text-decoration: underline; }
-      .name { font-size: 32px; font-weight: 700; }
-      .papertitle { font-weight: 600; }
-      .highlight { background: #ffffd0; padding: 1px 4px; border-radius: 4px; }
-      .subtle { color: #666; }
-      .small { font-size: 12px; color: #666; }
+      /* Minimal fallback shown only until stylesheet.css loads (or if missing).
+         Full theming, dark mode, and layout live in stylesheet.css. */
+      body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; }
     </style>
   </head>
 
-  <body>
-    <table style="width:100%;max-width:900px;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;"><tbody>
+  <body id="top">
+    <nav class="topnav" aria-label="Primary">
+      <div class="topnav-inner">
+        <a class="topnav-brand" href="#top">Omer Shubi</a>
+        <div class="topnav-links">
+          <a href="#publications">Publications</a>
+          <a href="#talks">Talks</a>
+          <a href="#media">Media</a>
+          <a href="#bio">Bio</a>
+          <a href="#personal">Personal</a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle dark mode">
+          <!-- moon: shown in light mode -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <!-- sun: shown in dark mode -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 1.5v2.5M12 20v2.5M4.22 4.22l1.77 1.77M18.01 18.01l1.77 1.77M1.5 12h2.5M20 12h2.5M4.22 19.78l1.77-1.77M18.01 5.99l1.77-1.77"></path></svg>
+        </button>
+      </div>
+    </nav>
+
+    <table style="width:100%;max-width:1200px;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;"><tbody>
       <tr><td style="padding:0">
 
         <!-- Header -->
-        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;"><tbody>
+        <table class="header-table" style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto;"><tbody>
           <tr>
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
+            <td class="header-text" style="padding:2.5%;width:72%;vertical-align:middle">
               <h1 class="name" style="text-align:center">Omer Shubi</h1>
               <p>
                 I am a PhD candidate in Data Science at the <a target="_blank" rel="noopener noreferrer" href="https://www.technion.ac.il/">Technion</a>, working under the supervision of <a target="_blank" rel="noopener noreferrer" href="https://dds.technion.ac.il/people/academic-staff/yevgeni-berzak/">Yevgeni Berzak</a> at the Language, Computation and Cognition <a target="_blank" rel="noopener noreferrer" href="https://lacclab.github.io/">(LaCC) Lab</a>.
@@ -92,22 +127,31 @@
               <p>
                 My research aims to decode our cognitive state in language processing, with a focus on utilizing eye movements in reading and neural activity while listening.
               </p>
-              <p style="text-align:center">
-                <a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=LZnWaVEAAAAJ&hl=en">Google Scholar</a>
-                &nbsp;/&nbsp;
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/omershubi">GitHub</a>
-                &nbsp;/&nbsp;
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/iamshubi">LinkedIn</a>
-                &nbsp;/&nbsp;
-                <a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0002-2961-5012">ORCID</a>
-              </p>
-              <p style="text-align:center">
-              💬 Contact me at:
-                <span>shubi[at]campus.technion.ac.il</span>
+              <div class="social-links">
+                <a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user=LZnWaVEAAAAJ&hl=en" aria-label="Google Scholar">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.838 3.94A8 8 0 0 1 12 9a8 8 0 0 1 7.162 4.44L24 9.5z"/></svg>
+                  Google Scholar
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/omershubi" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+                  GitHub
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/iamshubi" aria-label="LinkedIn">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                  LinkedIn
+                </a>
+                <a target="_blank" rel="noopener noreferrer" href="https://orcid.org/0000-0002-2961-5012" aria-label="ORCID">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zM7.37 6.62a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8zm-.75 3.35h1.5v7.75h-1.5zm3.44 0h2.9c2.76 0 3.97 1.97 3.97 3.88 0 2.07-1.62 3.88-3.96 3.88h-2.91zm1.5 1.36v5.03h1.3c1.85 0 2.72-1.12 2.72-2.51 0-1.28-.81-2.52-2.72-2.52z"/></svg>
+                  ORCID
+                </a>
+              </div>
+              <p class="contact-line">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 6 9 6.5L21 6"/></svg>
+                <a href="mailto:shubi@campus.technion.ac.il">shubi[at]campus.technion.ac.il</a>
               </p>
             </td>
-            <td style="padding:2.5%;width:37%;max-width:37%">
-              <a target="_blank" rel="noopener noreferrer" href="images/profile.jpg"><img alt="Omer Shubi, PhD candidate in Data Science at the Technion" src="images/profile.jpg" style="width:100%;max-width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:50%" /></a>
+            <td class="header-photo" style="padding:2.5%;width:28%;max-width:28%;text-align:center">
+              <a target="_blank" rel="noopener noreferrer" href="images/profile.jpg"><img class="profile-photo" alt="Omer Shubi, PhD candidate in Data Science at the Technion" src="images/profile.jpg" /></a>
             </td>
           </tr>
         </tbody></table>
@@ -115,14 +159,20 @@
         <!-- Publications heading -->
         <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto"><tbody>
           <tr>
-            <td style="padding:16px;width:100%;vertical-align:middle">
-              <h2>Publications</h2>
+            <td id="publications" class="section-anchor" style="padding:16px;width:100%;vertical-align:middle">
+              <div class="section-head">
+                <svg class="sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+                <h2>Publications</h2>
+                <button id="pub-expand-all" class="expand-all" type="button" aria-label="Expand all publications">Expand all</button>
+              </div>
             </td>
           </tr>
         </tbody></table>
 
         <!-- Publications -->
-        <table style="width:100%;border:0;border-spacing:0 8px;border-collapse:separate;margin:0 auto"><tbody>
+        <table class="pub-table" style="width:100%;border:0;border-spacing:0 8px;border-collapse:separate;margin:0 auto">
+          <colgroup><col style="width:108px" /><col /></colgroup>
+          <tbody>
 
           <script>
           function toggleSection(id) {
@@ -752,18 +802,69 @@
         <!-- Talks and Presentations -->
         <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:12px auto 0"><tbody>
           <tr>
-            <td style="padding:16px;width:100%;vertical-align:middle">
-              <h2>Talks and Presentations</h2>
-              <ul style="margin-top:0">
-                <li><a target="_blank" rel="noopener noreferrer" href="https://acl2025-eyetracking-and-nlp.github.io/"><strong>Eye Tracking and NLP</strong></a> — Tutorial at ACL 2025, Vienna, Austria (2025).</li>
-                <li><strong>Decoding Reading Goals from Eye Movements</strong> — Talk at the 3rd Workshop on Eye Movements and the Assessment of Reading Comprehension, University of Stuttgart (2025).</li>
-                <li><strong>Data Science meets Cognitive Science: Decoding Cognitive State during Language Processing</strong> — Data Club, Faculty of Data and Decision Sciences, Technion (2024; 2025).</li>
-                <li><strong>Non-ordinary Reading as a Frontier for Predictive Modeling and Psycholinguistics</strong> — Computational Psycholinguistics Lab, Dept. of Brain and Cognitive Sciences, MIT (2024).</li>
-                <li><strong>Fine-Grained Prediction of Reading Comprehension from Eye Movements</strong> — Talk at the 2nd Workshop on Eye Movements and the Assessment of Reading Comprehension, University of Zurich; Talk at ISCOL, Haifa; and Poster at Highlights in the Language Sciences Conference, Nijmegen, Netherlands (2024).</li>
-                <li><strong>Eye Movements and Neural Traces of Ordinary and Information-Seeking Language Comprehension</strong> — Computational Psycholinguistics Lab, Dept. of Brain and Cognitive Sciences, MIT (2023).</li>
-                <li><strong>Eye Movements and Reading Comprehension in Ordinary versus Information-Seeking Reading</strong> — Invited talk at the Workshop on Predicting Reading Comprehension from Eye Movements, University of Zurich (2023).</li>
-                <li><strong>Eye Movements in Information-Seeking Reading</strong> — Short talk at the Annual Conference on Human Sentence Processing (HSP), Virtual (2023).</li>
-              </ul>
+            <td id="talks" class="section-anchor" style="padding:16px;width:100%;vertical-align:middle">
+              <div class="section-head">
+                <svg class="sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v1a7 7 0 0 1-14 0v-1"/><path d="M12 18.5V22"/><path d="M8 22h8"/></svg>
+                <h2>Talks &amp; Presentations</h2>
+              </div>
+              <div class="entry-list">
+                <div class="entry">
+                  <div class="entry-year">2025</div>
+                  <div class="entry-body">
+                    <div class="entry-title"><span class="entry-tag">Tutorial</span><a target="_blank" rel="noopener noreferrer" href="https://acl2025-eyetracking-and-nlp.github.io/">Eye Tracking and NLP</a></div>
+                    <div class="entry-meta">ACL 2025 · Vienna, Austria</div>
+                  </div>
+                </div>
+                <div class="entry">
+                  <div class="entry-year">2025</div>
+                  <div class="entry-body">
+                    <div class="entry-title">Decoding Reading Goals from Eye Movements</div>
+                    <div class="entry-meta">3rd Workshop on Eye Movements and the Assessment of Reading Comprehension · University of Stuttgart</div>
+                  </div>
+                </div>
+                <div class="entry">
+                  <div class="entry-year">2024 – 2025</div>
+                  <div class="entry-body">
+                    <div class="entry-title">Data Science meets Cognitive Science: Decoding Cognitive State during Language Processing</div>
+                    <div class="entry-meta">Data Club, Faculty of Data and Decision Sciences · Technion</div>
+                  </div>
+                </div>
+                <div class="entry">
+                  <div class="entry-year">2024</div>
+                  <div class="entry-body">
+                    <div class="entry-title">Non-ordinary Reading as a Frontier for Predictive Modeling and Psycholinguistics</div>
+                    <div class="entry-meta">Computational Psycholinguistics Lab, Dept. of Brain and Cognitive Sciences · MIT</div>
+                  </div>
+                </div>
+                <div class="entry">
+                  <div class="entry-year">2024</div>
+                  <div class="entry-body">
+                    <div class="entry-title">Fine-Grained Prediction of Reading Comprehension from Eye Movements</div>
+                    <div class="entry-meta">2nd Workshop on Eye Movements and the Assessment of Reading Comprehension, University of Zurich · ISCOL, Haifa · Poster at Highlights in the Language Sciences Conference, Nijmegen, Netherlands</div>
+                  </div>
+                </div>
+                <div class="entry">
+                  <div class="entry-year">2023</div>
+                  <div class="entry-body">
+                    <div class="entry-title">Eye Movements and Neural Traces of Ordinary and Information-Seeking Language Comprehension</div>
+                    <div class="entry-meta">Computational Psycholinguistics Lab, Dept. of Brain and Cognitive Sciences · MIT</div>
+                  </div>
+                </div>
+                <div class="entry">
+                  <div class="entry-year">2023</div>
+                  <div class="entry-body">
+                    <div class="entry-title"><span class="entry-tag">Invited</span>Eye Movements and Reading Comprehension in Ordinary versus Information-Seeking Reading</div>
+                    <div class="entry-meta">Workshop on Predicting Reading Comprehension from Eye Movements · University of Zurich</div>
+                  </div>
+                </div>
+                <div class="entry">
+                  <div class="entry-year">2023</div>
+                  <div class="entry-body">
+                    <div class="entry-title">Eye Movements in Information-Seeking Reading</div>
+                    <div class="entry-meta">Short talk · Annual Conference on Human Sentence Processing (HSP) · Virtual</div>
+                  </div>
+                </div>
+              </div>
             </td>
           </tr>
         </tbody></table>
@@ -771,13 +872,41 @@
         <!-- Media Coverage -->
         <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto"><tbody>
           <tr>
-            <td style="padding:16px;width:100%;vertical-align:middle">
-              <h2>Media Coverage</h2>
-              <ul style="margin-top:0">
-                <li><a target="_blank" rel="noopener noreferrer" href="https://www.jpost.com/science/article-866551"><strong>Technion Researchers Develop AI Models That Track Eye Movements to Understand Reading Behavior</strong></a> — <em>The Jerusalem Post</em>, 2025.</li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://www.technion.ac.il/en/blog/article/eyes-on-the-text/"><strong>Eyes on Text: AI Models for Inferring Reading Intentions from Eye Movements</strong></a> — <em>Technion Blog</em>, 2025.</li>
-                <li><a target="_blank" rel="noopener noreferrer" href="https://dds.technion.ac.il/omer-shubi-wins-prestigious-vatat-scholarship-for-outstanding-phd-students-in-data-science/"><strong>VATAT Scholarship for Outstanding PhD Students in Data Science</strong></a> — <em>Faculty of Data and Decision Sciences, Technion</em>, 2023.</li>
-              </ul>
+            <td id="media" class="section-anchor" style="padding:16px;width:100%;vertical-align:middle">
+              <div class="section-head">
+                <svg class="sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h14a2 2 0 0 0 2-2V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a2 2 0 0 1-4 0V9a1 1 0 0 1 1-1h1"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="M8 16h5"/></svg>
+                <h2>Media Coverage</h2>
+              </div>
+              <div class="entry-list">
+                <div class="entry">
+                  <div class="media-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h14a2 2 0 0 0 2-2V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a2 2 0 0 1-4 0V9a1 1 0 0 1 1-1h1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+                  <div class="entry-body">
+                    <div class="entry-title"><a target="_blank" rel="noopener noreferrer" href="https://www.jpost.com/science/article-866551">Technion Researchers Develop AI Models That Track Eye Movements to Understand Reading Behavior</a></div>
+                    <div class="entry-meta"><em>The Jerusalem Post</em> · 2025</div>
+                  </div>
+                </div>
+                <div class="entry">
+                  <div class="media-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h14a2 2 0 0 0 2-2V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a2 2 0 0 1-4 0V9a1 1 0 0 1 1-1h1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+                  <div class="entry-body">
+                    <div class="entry-title"><a target="_blank" rel="noopener noreferrer" href="https://www.technion.ac.il/en/blog/article/eyes-on-the-text/">Eyes on Text: AI Models for Inferring Reading Intentions from Eye Movements</a></div>
+                    <div class="entry-meta"><em>Technion Blog</em> · 2025</div>
+                  </div>
+                </div>
+                <div class="entry">
+                  <div class="media-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2v20l6-4 6 4V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"/></svg></div>
+                  <div class="entry-body">
+                    <div class="entry-title"><a target="_blank" rel="noopener noreferrer" href="https://dds.technion.ac.il/omer-shubi-wins-prestigious-vatat-scholarship-for-outstanding-phd-students-in-data-science/">VATAT Scholarship for Outstanding PhD Students in Data Science</a></div>
+                    <div class="entry-meta"><em>Faculty of Data and Decision Sciences, Technion</em> · 2023</div>
+                  </div>
+                </div>
+                <div class="entry">
+                  <div class="media-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 22h14a2 2 0 0 0 2-2V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a2 2 0 0 1-4 0V9a1 1 0 0 1 1-1h1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+                  <div class="entry-body">
+                    <div class="entry-title"><a target="_blank" rel="noopener noreferrer" href="https://www.calcalist.co.il/local/articles/0,7340,L-3738480,00.html">At a Beijing Accelerator, Israeli Startups Adapt to China</a></div>
+                    <div class="entry-meta"><em>Calcalist (CTech)</em> · 2018 · interviewed as Head of China Business at Watteam</div>
+                  </div>
+                </div>
+              </div>
             </td>
           </tr>
         </tbody></table>
@@ -785,46 +914,378 @@
         <!-- Bio -->
         <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto"><tbody>
           <tr>
-            <td style="padding:16px;width:100%;vertical-align:top">
-              <h2>Bio</h2>
-              <p style="margin-top:0">
-                <strong>Education.</strong>
-                <ul style="margin-top:4px; margin-bottom:0;">
-                  <li>PhD Candidate in Data Science, Technion — Israel Institute of Technology (2023–Present)</li>
-                  <li>MSc (Direct Track to PhD) in Data Science, Technion — Israel Institute of Technology (2021–2023)</li>
-                  <li>BSc in Data Science and Engineering, Technion — Israel Institute of Technology (2017–2021)</li>
-                </ul>
-                <br/>
-                <strong>Awards.</strong>
-                <ul style="margin-top:4px; margin-bottom:0;">
-                  <li>Israeli Council for Higher Education (VATAT) Scholarship for Outstanding PhD Students in Data Science (2023–2026)</li>
-                  <li>Leonard and Diane Sherman Interdisciplinary Graduate School Fellowship (2021)</li>
-                  <li>Excellence Dean's Support Scholarship: Merit scholarship for Technion alumni (2021–2022)</li>
-                  <li>Undergraduate President'  s List — 3 Semesters (2020–2021)</li>
-                </ul>
-                <br/><br/>
-                <strong>Industry.</strong>
-                <ul style="margin-top:4px; margin-bottom:0;">
-                  <li>Applied Scientist Intern, Amazon (May–Sep 2025)</li>
-                  <li>Research Assistant, Hybrid Imaging Lab, Technion (2019–2021)</li>
-                  <li>Head of Business Development (China) / Customer Satisfaction Manager / Project and Lab Manager, Watteam (2015–2018)</li>
-                </ul>
-                <br/>
-                <strong>Teaching.</strong>
-                <ul style="margin-top:4px; margin-bottom:0;">
-                  <li>Head Teaching Assistant, Language, Computation and Cognition (2022–2026)</li>
-                  <li>Teaching Assistant, Database Management (2022–2023)</li>
-                </ul>
-              </p>
+            <td id="bio" class="section-anchor" style="padding:16px;width:100%;vertical-align:top">
+              <div class="section-head">
+                <svg class="sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+                <h2>Bio</h2>
+              </div>
+              <div class="bio-grid">
+
+                <div class="bio-block">
+                  <div class="bio-head">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/></svg>
+                    Education
+                  </div>
+                  <div class="bio-entry"><div class="bio-year">2023 – Present</div><div class="bio-desc">PhD Candidate in Data Science, Technion — Israel Institute of Technology</div></div>
+                  <div class="bio-entry"><div class="bio-year">2021 – 2023</div><div class="bio-desc">MSc (Direct Track to PhD) in Data Science, Technion — Israel Institute of Technology</div></div>
+                  <div class="bio-entry"><div class="bio-year">2017 – 2021</div><div class="bio-desc">BSc in Data Science and Engineering, Technion — Israel Institute of Technology</div></div>
+                </div>
+
+                <div class="bio-block">
+                  <div class="bio-head">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3"/><path d="M7 5H4v2a3 3 0 0 0 3 3"/></svg>
+                    Awards
+                  </div>
+                  <div class="bio-entry"><div class="bio-year">2023 – 2026</div><div class="bio-desc">Israeli Council for Higher Education (VATAT) Scholarship for Outstanding PhD Students in Data Science</div></div>
+                  <div class="bio-entry"><div class="bio-year">2021</div><div class="bio-desc">Leonard and Diane Sherman Interdisciplinary Graduate School Fellowship</div></div>
+                  <div class="bio-entry"><div class="bio-year">2021 – 2022</div><div class="bio-desc">Excellence Dean's Support Scholarship — merit scholarship for Technion alumni</div></div>
+                  <div class="bio-entry"><div class="bio-year">2020 – 2021</div><div class="bio-desc">Undergraduate President's List — 3 semesters</div></div>
+                </div>
+
+                <div class="bio-block">
+                  <div class="bio-head">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20z"/></svg>
+                    Research Visits &amp; Training
+                  </div>
+                  <div class="bio-entry"><div class="bio-year">2024</div><div class="bio-desc">Brains, Minds and Machines Summer Course, MIT</div></div>
+                  <div class="bio-entry"><div class="bio-year">2024</div><div class="bio-desc">Visiting Researcher, Digital Linguistics Group, University of Zurich<span class="bio-sub">MultiplEYE COST Action Short-Term Scientific Mission</span></div></div>
+                  <div class="bio-entry"><div class="bio-year">2023</div><div class="bio-desc">Visiting Researcher, Computational Psycholinguistics Lab, MIT</div></div>
+                </div>
+
+                <div class="bio-block">
+                  <div class="bio-head">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                    Industry
+                  </div>
+                  <div class="bio-entry"><div class="bio-year">2025</div><div class="bio-desc">Applied Scientist Intern, Amazon<span class="bio-sub">Sequential Customer Repeated Interaction Prediction using Transformers</span></div></div>
+                  <div class="bio-entry"><div class="bio-year">2019 – 2021</div><div class="bio-desc">Research Assistant, Hybrid Imaging Lab, Technion</div></div>
+                  <div class="bio-entry"><div class="bio-year">2015 – 2018</div><div class="bio-desc">Head of Business Development (China) / Customer Satisfaction Manager / Project &amp; Lab Manager, Watteam</div></div>
+                </div>
+
+                <div class="bio-block">
+                  <div class="bio-head">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h20v13H2z"/><path d="M8 21h8"/><path d="M12 16v5"/><path d="M6 8h8"/><path d="M6 11h5"/></svg>
+                    Teaching
+                  </div>
+                  <div class="bio-entry"><div class="bio-year">2022 – 2026</div><div class="bio-desc">Head Teaching Assistant, Language, Computation and Cognition</div></div>
+                  <div class="bio-entry"><div class="bio-year">2022 – 2023</div><div class="bio-desc">Teaching Assistant, Database Management</div></div>
+                </div>
+
+                <div class="bio-block">
+                  <div class="bio-head">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                    Service
+                  </div>
+                  <div class="bio-entry"><div class="bio-year">2024, 2026</div><div class="bio-desc">Reviewer — ACL, EMNLP, CogSci</div></div>
+                </div>
+
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <!-- Beyond Research (personal) -->
+        <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:0 auto"><tbody>
+          <tr>
+            <td id="personal" class="section-anchor" style="padding:16px;width:100%;vertical-align:top">
+              <div class="section-head">
+                <svg class="sec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                <h2>Beyond Research</h2>
+              </div>
+              <div class="bio-grid">
+
+                <div class="bio-block">
+                  <div class="bio-head">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="15" cy="5" r="1"/><path d="M12 17.5V14l-3-3 4-3 2 3h2"/></svg>
+                    Mountain Biking
+                  </div>
+                  <p class="personal-text">I raced cross-country mountain bikes competitively for about ten years and was a two-time Israeli national champion in the youth category. These days I ride purely for fun.</p>
+                </div>
+
+                <div class="bio-block">
+                  <div class="bio-head">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z"/></svg>
+                    Hikes &amp; Treks
+                  </div>
+                  <div class="hike-list">
+                    <div class="hike"><span class="hike-name">Cordillera Huayhuash Trek</span><span class="hike-loc">Peru</span></div>
+                    <div class="hike"><span class="hike-name">Mount Olympus</span><span class="hike-loc">Greece</span></div>
+                    <div class="hike"><span class="hike-name">Schladming – Dachstein Alps</span><span class="hike-loc">Austria</span></div>
+                    <div class="hike"><span class="hike-name">Makhtesh Ramon</span><span class="hike-loc">Israel</span></div>
+                  </div>
+                </div>
+
+              </div>
             </td>
           </tr>
         </tbody></table>
 
         <p class="small" style="text-align:center;margin:32px 0 10px">
-        Last updated: Apr 2026
+        Last updated: July 2026
         </p>
 
       </td></tr>
     </tbody></table>
+
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" title="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+    </button>
+
+    <script>
+      // ---- Theme toggle -----------------------------------------------------
+      (function () {
+        var root = document.documentElement;
+        var btn = document.getElementById('theme-toggle');
+        var meta = document.querySelector('meta[name="theme-color"]');
+        function sync() {
+          var dark = root.getAttribute('data-theme') === 'dark';
+          btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+          if (meta) meta.setAttribute('content', dark ? '#101317' : '#ffffff');
+        }
+        sync();
+        btn.addEventListener('click', function () {
+          var dark = root.getAttribute('data-theme') === 'dark';
+          if (dark) { root.removeAttribute('data-theme'); }
+          else { root.setAttribute('data-theme', 'dark'); }
+          try { localStorage.setItem('theme', dark ? 'light' : 'dark'); } catch (e) {}
+          sync();
+        });
+      })();
+
+      // ---- Icons on publication link buttons --------------------------------
+      (function () {
+        var NS = 'http://www.w3.org/2000/svg';
+        // simple stroke-path icon set (24x24 viewBox)
+        var ICONS = {
+          doc:   ['M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z', 'M14 2v6h6', 'M9 13h6', 'M9 17h6'],
+          code:  ['M16 18l6-6-6-6', 'M8 6l-6 6 6 6'],
+          globe: ['M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z', 'M2 12h20', 'M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z'],
+          data:  ['M12 2a9 3 0 1 0 0 6 9 3 0 0 0 0-6z', 'M21 5v6c0 1.66-4 3-9 3s-9-1.34-9-3V5', 'M21 11v6c0 1.66-4 3-9 3s-9-1.34-9-3v-6'],
+          ext:   ['M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6', 'M15 3h6v6', 'M10 14L21 3'],
+          quote: ['M3 21h5V10a4 4 0 0 0-4 4', 'M14 21h5V10a4 4 0 0 0-4 4'],
+          eye:   ['M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z', 'M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z'],
+          book:  ['M4 19.5A2.5 2.5 0 0 1 6.5 17H20', 'M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z']
+        };
+        function iconFor(label) {
+          var t = label.trim().toLowerCase();
+          if (t === 'pdf' || t === 'paper') return 'doc';
+          if (t === 'code') return 'code';
+          if (t === 'website') return 'globe';
+          if (t === 'dataset') return 'data';
+          if (t === 'abstract') return 'eye';
+          if (t === 'bib') return 'quote';
+          if (t === 'openreview' || t === 'neurips') return 'book';
+          return 'ext';
+        }
+        function makeSvg(key) {
+          var svg = document.createElementNS(NS, 'svg');
+          svg.setAttribute('viewBox', '0 0 24 24');
+          svg.setAttribute('fill', 'none');
+          svg.setAttribute('stroke', 'currentColor');
+          svg.setAttribute('stroke-width', '2');
+          svg.setAttribute('stroke-linecap', 'round');
+          svg.setAttribute('stroke-linejoin', 'round');
+          svg.setAttribute('aria-hidden', 'true');
+          ICONS[key].forEach(function (d) {
+            var p = document.createElementNS(NS, 'path');
+            p.setAttribute('d', d);
+            svg.appendChild(p);
+          });
+          return svg;
+        }
+        document.querySelectorAll('.pub-links a').forEach(function (a) {
+          if (a.querySelector('svg')) return;
+          a.insertBefore(makeSvg(iconFor(a.textContent)), a.firstChild);
+        });
+      })();
+
+      // ---- Copy button on BibTeX blocks -------------------------------------
+      (function () {
+        var NS = 'http://www.w3.org/2000/svg';
+        function icon(paths) {
+          var svg = document.createElementNS(NS, 'svg');
+          svg.setAttribute('viewBox', '0 0 24 24');
+          svg.setAttribute('fill', 'none');
+          svg.setAttribute('stroke', 'currentColor');
+          svg.setAttribute('stroke-width', '2');
+          svg.setAttribute('stroke-linecap', 'round');
+          svg.setAttribute('stroke-linejoin', 'round');
+          svg.setAttribute('aria-hidden', 'true');
+          paths.forEach(function (d) {
+            var p = document.createElementNS(NS, 'path');
+            p.setAttribute('d', d);
+            svg.appendChild(p);
+          });
+          return svg;
+        }
+        var COPY = ['M9 9h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V11a2 2 0 0 1 2-2z', 'M5 15H4a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v1'];
+        var CHECK = ['M20 6 9 17l-5-5'];
+        document.querySelectorAll('div[id^="cite-"]').forEach(function (div) {
+          var pre = div.querySelector('pre');
+          if (!pre) return;
+          div.classList.add('cite-wrap');
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'copy-btn';
+          btn.setAttribute('aria-label', 'Copy BibTeX');
+          var label = document.createElement('span');
+          label.textContent = 'Copy';
+          btn.appendChild(icon(COPY));
+          btn.appendChild(label);
+          btn.addEventListener('click', function () {
+            var text = pre.textContent;
+            var done = function () {
+              btn.classList.add('copied');
+              btn.replaceChildren(icon(CHECK), Object.assign(document.createElement('span'), { textContent: 'Copied' }));
+              setTimeout(function () {
+                btn.classList.remove('copied');
+                btn.replaceChildren(icon(COPY), Object.assign(document.createElement('span'), { textContent: 'Copy' }));
+              }, 1600);
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(text).then(done, done);
+            } else {
+              var ta = document.createElement('textarea');
+              ta.value = text; document.body.appendChild(ta); ta.select();
+              try { document.execCommand('copy'); } catch (e) {}
+              document.body.removeChild(ta); done();
+            }
+          });
+          div.appendChild(btn);
+        });
+      })();
+
+      // ---- Collapse publications to venue + title (expand for details) ------
+      (function () {
+        var NS = 'http://www.w3.org/2000/svg';
+        function chevron() {
+          var svg = document.createElementNS(NS, 'svg');
+          svg.setAttribute('viewBox', '0 0 24 24');
+          svg.setAttribute('fill', 'none');
+          svg.setAttribute('stroke', 'currentColor');
+          svg.setAttribute('stroke-width', '2');
+          svg.setAttribute('stroke-linecap', 'round');
+          svg.setAttribute('stroke-linejoin', 'round');
+          svg.setAttribute('aria-hidden', 'true');
+          var p = document.createElementNS(NS, 'path');
+          p.setAttribute('d', 'm6 9 6 6 6-6');
+          svg.appendChild(p);
+          return svg;
+        }
+        document.querySelectorAll('td').forEach(function (td) {
+          var title = td.querySelector(':scope > .pub-title');
+          if (!title) return;
+          var details = document.createElement('div');
+          details.className = 'pub-details';
+          var sib = title.nextSibling;
+          while (sib) { var next = sib.nextSibling; details.appendChild(sib); sib = next; }
+          var header = document.createElement('div');
+          header.className = 'pub-titlerow';
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'pub-expand';
+          btn.setAttribute('aria-expanded', 'false');
+          btn.setAttribute('aria-label', 'Show details');
+          btn.appendChild(chevron());
+          td.insertBefore(header, title);
+          header.appendChild(title);
+          header.appendChild(btn);
+          td.appendChild(details);
+          function toggle() {
+            var open = details.classList.toggle('open');
+            btn.classList.toggle('open', open);
+            btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            btn.setAttribute('aria-label', open ? 'Hide details' : 'Show details');
+          }
+          // Clicking anywhere on the row toggles, except: the title/detail links,
+          // interacting inside the expanded details, or selecting text.
+          var row = td.closest('tr');
+          if (row) row.classList.add('pub-clickable');
+          (row || td).addEventListener('click', function (e) {
+            if (e.target.closest('a')) return;
+            if (e.target.closest('.pub-details')) return;
+            if (window.getSelection && window.getSelection().toString()) return;
+            toggle();
+          });
+        });
+      })();
+
+      // ---- Expand all / Collapse all ----------------------------------------
+      (function () {
+        var btn = document.getElementById('pub-expand-all');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var details = document.querySelectorAll('.pub-details');
+          var expand = Array.prototype.some.call(details, function (d) { return !d.classList.contains('open'); });
+          details.forEach(function (d) { d.classList.toggle('open', expand); });
+          document.querySelectorAll('.pub-expand').forEach(function (b) {
+            b.classList.toggle('open', expand);
+            b.setAttribute('aria-expanded', expand ? 'true' : 'false');
+            b.setAttribute('aria-label', expand ? 'Hide details' : 'Show details');
+          });
+          btn.textContent = expand ? 'Collapse all' : 'Expand all';
+        });
+      })();
+
+      // ---- Anchor links on section headings ---------------------------------
+      (function () {
+        document.querySelectorAll('.section-head').forEach(function (h) {
+          var host = h.closest('[id]');
+          if (!host || !host.id) return;
+          var a = document.createElement('a');
+          a.className = 'head-anchor';
+          a.href = '#' + host.id;
+          a.textContent = '#';
+          a.setAttribute('aria-label', 'Link to the ' + host.id + ' section');
+          var h2 = h.querySelector('h2');
+          if (h2) { h2.insertAdjacentElement('afterend', a); } else { h.appendChild(a); }
+        });
+      })();
+
+      // ---- Make whole Media rows clickable ----------------------------------
+      (function () {
+        document.querySelectorAll('#media .entry').forEach(function (row) {
+          var link = row.querySelector('a[href]');
+          if (!link) return;
+          row.classList.add('entry-link');
+          row.addEventListener('click', function (e) {
+            if (e.target.closest('a')) return;
+            window.open(link.href, '_blank', 'noopener');
+          });
+        });
+      })();
+
+      // ---- Back to top ------------------------------------------------------
+      (function () {
+        var btt = document.getElementById('back-to-top');
+        if (!btt) return;
+        var onScroll = function () { btt.classList.toggle('show', window.scrollY > 400); };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+        btt.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+      })();
+
+      // ---- Scrollspy: highlight active nav link -----------------------------
+      (function () {
+        var links = Array.prototype.slice.call(document.querySelectorAll('.topnav-links a'));
+        var map = {};
+        links.forEach(function (a) {
+          var id = a.getAttribute('href').slice(1);
+          var el = document.getElementById(id);
+          if (el) map[id] = a;
+        });
+        var ids = Object.keys(map);
+        if (!ids.length || !('IntersectionObserver' in window)) return;
+        var visible = {};
+        var obs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { visible[e.target.id] = e.isIntersecting; });
+          var current = null;
+          for (var i = 0; i < ids.length; i++) { if (visible[ids[i]]) { current = ids[i]; break; } }
+          links.forEach(function (a) { a.classList.remove('active'); });
+          if (current) map[current].classList.add('active');
+        }, { rootMargin: '-70px 0px -70% 0px', threshold: 0 });
+        ids.forEach(function (id) { obs.observe(document.getElementById(id)); });
+      })();
+    </script>
   </body>
 </html>

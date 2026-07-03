@@ -668,20 +668,32 @@ span.highlight,
   line-height: 1.62;
   margin: 0;
 }
+.hike-intro {
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin: 0 0 12px;
+}
 .hike-list { display: flex; flex-direction: column; }
-.hike {
+.hike { padding: 9px 0; }
+.hike + .hike { border-top: 1px dashed var(--border); }
+.hike-main {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 12px;
-  padding: 7px 0;
 }
-.hike + .hike { border-top: 1px dashed var(--border); }
 .hike-name { font-weight: 600; }
-.hike-loc {
+.hike-year {
   color: var(--text-muted);
   font-size: 14.5px;
+  font-weight: 600;
   white-space: nowrap;
+}
+.hike-meta {
+  color: var(--text-muted);
+  font-size: 14.5px;
+  margin-top: 1px;
 }
 
 @media (max-width: 620px) {

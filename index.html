@@ -102,7 +102,6 @@
           <a href="#talks">Talks</a>
           <a href="#media">Media</a>
           <a href="#bio">Bio</a>
-          <a href="#personal">Personal</a>
         </div>
         <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle dark mode">
           <!-- moon: shown in light mode -->
@@ -1031,27 +1030,27 @@
                   <div class="hike-list">
                     <div class="hike">
                       <div class="hike-main"><span class="hike-name">Pilatus</span><span class="hike-year">2026</span></div>
-                      <div class="hike-meta">Switzerland · 1 day · 15 km · ↑1,600 m ↓1,600 m</div>
+                      <div class="hike-meta">Switzerland · 1 day · 15 km · ↑1,600 m</div>
                       <div class="hike-thumb"><img src="images/placeholder.png" alt="Pilatus hike" loading="lazy" /></div>
                     </div>
                     <div class="hike">
                       <div class="hike-main"><span class="hike-name">Cordillera Huayhuash Trek</span><span class="hike-year">2026</span></div>
-                      <div class="hike-meta">Peru · 8 days · 130 km · ↑8,000 m ↓8,000 m</div>
+                      <div class="hike-meta">Peru · 8 days · 130 km · ↑8,000 m</div>
                       <div class="hike-thumb"><img src="images/placeholder.png" alt="Cordillera Huayhuash Trek hike" loading="lazy" /></div>
                     </div>
                     <div class="hike">
                       <div class="hike-main"><span class="hike-name">Mount Olympus</span><span class="hike-year">2025</span></div>
-                      <div class="hike-meta">Greece · 2 days · 20 km · ↑2,100 m ↓2,100 m</div>
+                      <div class="hike-meta">Greece · 2 days · 20 km · ↑2,100 m</div>
                       <div class="hike-thumb"><img src="images/placeholder.png" alt="Mount Olympus hike" loading="lazy" /></div>
                     </div>
                     <div class="hike">
                       <div class="hike-main"><span class="hike-name">Schladming Tauern</span><span class="hike-year">2023</span></div>
-                      <div class="hike-meta">Austria · 6 days · 70 km · ↑4,500 m ↓4,500 m</div>
+                      <div class="hike-meta">Austria · 6 days · 70 km · ↑4,500 m</div>
                       <div class="hike-thumb"><img src="images/placeholder.png" alt="Schladming Tauern hike" loading="lazy" /></div>
                     </div>
                     <div class="hike">
                       <div class="hike-main"><span class="hike-name">Makhtesh Ramon</span><span class="hike-year">2021</span></div>
-                      <div class="hike-meta">Israel · 7 days · 100 km · ↑2,000 m ↓2,000 m</div>
+                      <div class="hike-meta">Israel · 7 days · 100 km · ↑2,000 m</div>
                       <div class="hike-thumb"><img src="images/placeholder.png" alt="Makhtesh Ramon hike" loading="lazy" /></div>
                     </div>
                   </div>
@@ -1293,6 +1292,26 @@
           row.addEventListener('click', function (e) {
             if (e.target.closest('a')) return;
             window.open(link.href, '_blank', 'noopener');
+          });
+        });
+      })();
+
+      // ---- Hikes: tap/click to reveal stats + photo (mobile-friendly) -------
+      (function () {
+        document.querySelectorAll('.hike').forEach(function (hike) {
+          hike.setAttribute('tabindex', '0');
+          hike.setAttribute('role', 'button');
+          hike.setAttribute('aria-expanded', 'false');
+          function toggle() {
+            var open = hike.classList.toggle('open');
+            hike.setAttribute('aria-expanded', open ? 'true' : 'false');
+          }
+          hike.addEventListener('click', toggle);
+          hike.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              toggle();
+            }
           });
         });
       })();

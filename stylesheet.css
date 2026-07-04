@@ -690,7 +690,7 @@ span.highlight,
   margin-top: -4px;
 }
 .hike-list { display: flex; flex-direction: column; }
-.hike { padding: 9px 0; }
+.hike { padding: 9px 0; cursor: pointer; }
 .hike + .hike { border-top: 1px dashed var(--border); }
 .hike-main {
   display: flex;
@@ -708,7 +708,10 @@ span.highlight,
 .hike-meta {
   color: var(--text-muted);
   font-size: 14.5px;
-  margin-top: 1px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.25s ease, opacity 0.2s ease, margin-top 0.2s ease;
 }
 .hike-thumb {
   max-height: 0;
@@ -723,13 +726,17 @@ span.highlight,
   border-radius: 10px;
   border: 1px solid var(--border);
 }
-.hike:hover .hike-thumb {
+.hike:hover .hike-meta,
+.hike.open .hike-meta {
+  max-height: 4em;
+  opacity: 1;
+  margin-top: 1px;
+}
+.hike:hover .hike-thumb,
+.hike.open .hike-thumb {
   max-height: 220px;
   opacity: 1;
   margin-top: 10px;
-}
-@media (hover: none) {
-  .hike-thumb { display: none; }
 }
 
 @media (max-width: 620px) {

@@ -186,6 +186,16 @@ tr[id] > td:last-child  { border-radius: 0 8px 8px 0; }
   color: var(--accent);
 }
 
+.pub-thumb {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  margin: 4px 0 8px;
+}
+
 .pub-links {
   margin-top: 7px;
 }
@@ -674,6 +684,11 @@ span.highlight,
   color: var(--text-muted);
   margin: 0 0 12px;
 }
+.hike-note {
+  font-style: italic;
+  font-size: 13.5px;
+  margin-top: -4px;
+}
 .hike-list { display: flex; flex-direction: column; }
 .hike { padding: 9px 0; }
 .hike + .hike { border-top: 1px dashed var(--border); }
@@ -694,6 +709,27 @@ span.highlight,
   color: var(--text-muted);
   font-size: 14.5px;
   margin-top: 1px;
+}
+.hike-thumb {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.25s ease, opacity 0.2s ease, margin-top 0.2s ease;
+}
+.hike-thumb img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+.hike:hover .hike-thumb {
+  max-height: 220px;
+  opacity: 1;
+  margin-top: 10px;
+}
+@media (hover: none) {
+  .hike-thumb { display: none; }
 }
 
 @media (max-width: 620px) {

@@ -739,11 +739,72 @@ span.highlight,
   margin-top: 10px;
 }
 
+/* ==========================================================================
+   Mini apps — a quiet sub-block of "Beyond Research", styled like the hikes
+   list: title only, revealing a one-liner + screenshot on hover.
+   ========================================================================== */
+/* Stacks Mountain Biking + Mini Apps in the left column of the personal grid,
+   independent of the taller Hikes column on the right. */
+.bio-col {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  min-width: 0;
+}
+.app-list { display: flex; flex-direction: column; }
+.app {
+  display: block;
+  padding: 9px 0;
+  color: var(--text);
+}
+.app + .app { border-top: 1px dashed var(--border); }
+.app:hover { color: var(--text); }
+.app-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.app-name { font-weight: 600; }
+.app:hover .app-name { color: var(--accent); }
+.app-arrow {
+  flex: none;
+  width: 14px; height: 14px;
+  color: var(--text-muted);
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+.app:hover .app-arrow { color: var(--accent); transform: translate(2px, -2px); }
+.app-tagline {
+  color: var(--text-muted);
+  font-size: 14.5px;
+  line-height: 1.45;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.25s ease, opacity 0.2s ease, margin-top 0.2s ease;
+}
+.app-thumb {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.25s ease, opacity 0.2s ease, margin-top 0.2s ease;
+}
+.app-thumb img {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+.app:hover .app-tagline { max-height: 4em; opacity: 1; margin-top: 2px; }
+.app:hover .app-thumb { max-height: 300px; opacity: 1; margin-top: 10px; }
+
 @media (max-width: 620px) {
   .topnav-brand { display: none; }
   .topnav-inner { justify-content: space-between; }
   .topnav-links { margin-right: auto; }
   .bio-grid { grid-template-columns: 1fr; gap: 22px; }
+  .bio-col { gap: 22px; }
   .entry-year { width: 50px; }
 }
 

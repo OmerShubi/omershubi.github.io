@@ -684,11 +684,6 @@ span.highlight,
   color: var(--text-muted);
   margin: 0 0 12px;
 }
-.hike-note {
-  font-style: italic;
-  font-size: 13.5px;
-  margin-top: -4px;
-}
 .hike-list { display: flex; flex-direction: column; }
 .hike { padding: 9px 0; cursor: pointer; }
 .hike + .hike { border-top: 1px dashed var(--border); }
